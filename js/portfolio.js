@@ -1,3 +1,5 @@
+// Written by Brandt Newton for brandtnewton.com -2014
+
 $( document ).ready(function() {
 	hitbox = $( ".portfolio-item-container" );
 	content = $(".portfolio-hover-content");
