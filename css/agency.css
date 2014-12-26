@@ -30,16 +30,16 @@ h2 hr {
 }
 
 h2.light {
-    color: #293436;
+    color: #B0B9BB;
 }
 
 h2.light hr {
     width: 80%;
-    border-color: #293436;
+    border-color: #B0B9BB;
 }
 
 h3.light {
-    color: #9DA8AA;
+    color: #B0B9BB;
 }
 
 .newspaper{
@@ -125,11 +125,11 @@ li.job {
 }
 
 .text-muted {
-    color: #9DA8AA;
+    color: #B0B9BB;
 }
 
 .text-primary {
-    color: #3D4357;
+    color: ##5D6F72;
 }
 
 .text-white {
@@ -154,14 +154,14 @@ a.active {
 }
 
 a {
-    color: #9DA8AA;
+    color: #B0B9BB;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #9DA8AA;
+    color: ##B0B9BB;
 }
 
 h1,
@@ -191,12 +191,12 @@ iframe {
 }
 
 .btn-primary {
-    border-color: #3D4357;
+    border-color: #000;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #3D4357;
+    background-color: #1F222B;
 }
 
 .btn-primary:hover,
@@ -204,9 +204,9 @@ iframe {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #3D4357;
+    border-color: ##5D6F72;
     color: #fff;
-    background-color: #3D4357;
+    background-color: #5D6F72;
 }
 
 .btn-primary:active,
@@ -230,18 +230,18 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #3D4357;
-    background-color: #3D4357;
+    border-color: ##5D6F72;
+    background-color: ##1F222B;
 }
 
 .btn-primary .badge {
-    color: #3D4357;
+    color: ##5D6F72;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #3D4357;
+    border-color: ##5D6F72;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
@@ -249,7 +249,7 @@ fieldset[disabled] .btn-primary.active {
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #3D4357;
+    background-color: ##1F222B;
 }
 
 .btn-xl:hover,
@@ -257,9 +257,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #3D4357;
+    border-color: ##5D6F72;
     color: #fff;
-    background-color: #3D4357;
+    background-color: ##5D6F72;
 }
 
 .btn-xl:active,
@@ -283,12 +283,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #3D4357;
-    background-color: #3D4357;
+    border-color: ##5D6F72;
+    background-color: ##5D6F72;
 }
 
 .btn-xl .badge {
-    color: #3D4357;
+    color: ##5D6F72;
     background-color: #fff;
 }
 
@@ -315,8 +315,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #3D4357;
-    background-color: #3D4357;
+    border-color: ###B0B9BB;
+    background-color: ###B0B9BB;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -340,21 +340,21 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #3D4357;
+    color: ###B0B9BB;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #354C4F;
+    color: #B0B9BB;
     background-color: #1F222B;
-    border-bottom: 3px solid #354C4F;
+    border-bottom: 3px solid #B0B9BB;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
     background-color: #1F222B;
-    border-bottom: 2px solid #3D4357;
+    border-bottom: 3px solid ##B0B9BB;
 }
 
 @media(min-width:768px) {
@@ -394,7 +394,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
         opacity: 1;
-        color: #5D6F72;
+        color: #B0B9BB;
     }
 }
 
@@ -539,7 +539,7 @@ div.portfolio-hover:hover hr {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: #B0B9BB;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -615,7 +615,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #3D4357;
+    border-color: ##5D6F72;
     box-shadow: none;
 }
 
@@ -755,10 +755,16 @@ ul.social-buttons li a:active {
     position: absolute;
     top: 25px;
     right: 25px;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
+}
+
+iframe {
+    margin: 50px, 0;
+    width: 500px;
+    background-color: #000;
 }
 
 .portfolio-modal .close-modal:hover {
@@ -768,7 +774,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
-    height: 75px;
+    height: 50px;
     margin-left: 35px;
     background-color: #1F222B;
     -webkit-transform: rotate(45deg);
@@ -779,7 +785,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
-    height: 75px;
+    height: 50px;
     background-color: #1F222B;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -793,12 +799,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #3D4357;
+    background: ##5D6F72;
 }
 
 ::selection {
     text-shadow: none;
-    background: #3D4357;
+    background: ##5D6F72;
 }
 
 img::selection {
@@ -810,5 +816,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #3D4357;
+    webkit-tap-highlight-color: ##5D6F72;
 }
