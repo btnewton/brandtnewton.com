@@ -14,7 +14,7 @@ var cbpAnimatedHeader = (function() {
 		header = document.querySelector( '.navbar-default' ), 
 		didScroll = false,
 		changeHeaderOn = 350;
-	var name_title = $('.intro-heading');
+	var name_title = $('.navbar-header page-scroll');
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {

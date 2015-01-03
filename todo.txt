@@ -1,7 +1,2 @@
-1. Add icons for linked in, Facebook? and GitHub
-2. school icons
-3. education section
-4. X Buildr icon
-5. snowball icon (no background just Cody)
-6. Better color scheme
 7. Google analytics
+8. Contact Icons like awdagency
