@@ -114,14 +114,14 @@ ul#contact-list{
 }
 
 #down-arrow {
-    opacity: 0.75;
+    opacity: 1;
     margin-bottom: 13px;
     margin-left: 70px;
     margin-right: 100px;
 }
 
 #down-arrow:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .shadow {
@@ -322,11 +322,10 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-size: 2em;
-    letter-spacing 2px;
+    letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
     color: #ffd700;
 }
 
@@ -737,6 +736,10 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
     outline: 0;
+}
+
+.portfolio-modal {
+    text-transform: uppercase;
 }
 
 .portfolio-modal .modal-content {
