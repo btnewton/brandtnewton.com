@@ -16,6 +16,10 @@ body {
     left: 100px;
 }
 
+iframe {
+    border: 0;
+}
+
 .portfolio-modal button {
     margin-top: 100px;
 }
@@ -25,16 +29,16 @@ h4.item-intro {
     margin: 20px auto 40px auto;
 }
 
-h4.item-section {
+.item-section {
     margin-top: 60px;
 }
 
-h4 hr {
+.portfolio-modal hr {
     width: 30px;
     border-color: #1B2627;
 }
 
-h2 hr {
+hr {
     width: 80%;
     border-color: #1B2627;
 }
@@ -43,7 +47,7 @@ h2.light {
     color: #B0B9BB;
 }
 
-h2.light hr {
+hr.light {
     width: 80%;
     border-color: #B0B9BB;
 }
@@ -56,7 +60,7 @@ h2.white {
     color: #fff;
 }
 
-h2.white hr {
+hr.white {
     width: 80%;
     border-color: #fff;
 }
@@ -433,7 +437,6 @@ header {
     color: #FFF;
     background-image: url(../img/stag_winter.jpg);
     background-position: center center;
-    background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -550,6 +553,7 @@ section h3.section-subheading, section h4.section-subheading {
 }
 
 div.portfolio-hover hr {
+    border-color: #fff;
     width: 10%;
     -webkit-transition: all ease .s;
     -moz-transition: all ease .3s;
