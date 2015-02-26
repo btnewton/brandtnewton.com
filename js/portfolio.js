@@ -11,8 +11,8 @@ $( document ).ready(function() {
 	hitbox.hover(
 		function() {
 			$( this ).find(content).stop(true).fadeIn();
-			$( this ).find(".portfolio-icon").stop(true).animate({ opacity: "0.3"});
-			$( this ).find(".portfolio-hover").stop(true).animate({ height: "100%" });
+			$( this ).find(".portfolio-icon").stop(true).animate({ opacity: "1"});
+			$( this ).find(".portfolio-hover").stop(true).animate({ height: "100%", boxShadow: "0 -5px 5px rgba(0,0,0,0.5)" });
 		},
 		function() {
 			$( this ).find(content).stop(true).fadeOut();

@@ -6,7 +6,7 @@
 /*http://paletton.com/#uid=53O0u0k3V4WaYgf7Lb1ac80gJaQ*/
 body {
     overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     color: #313133;
 }
 
@@ -166,8 +166,9 @@ li.job {
     float: left;
 }
 
-.text-muted {
-    color: #7F8687;
+.fancy-text {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
 }
 
 .text-primary {
@@ -216,11 +217,6 @@ h6 {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
-}
-
-.portfolio-caption p {
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .img-centered {
@@ -339,7 +335,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand:hover {
     color: #ccac00;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .navbar-default .navbar-collapse {
@@ -413,8 +409,17 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 0 0 10px 0;
-        background-color: rgba(10, 10, 10, 0.9);
+        background-color: rgba(10, 10, 10, 1);
+        box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 
+    }
+
+    .top-shadow {
+        box-shadow: 0 -5px 5px rgba(0,0,0,0.9);
+    }
+
+    .bottom-shadow {
+        box-shadow: 0 5px 5px rgba(0,0,0,0.9);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -504,9 +509,10 @@ section h2 {
     color: #1B2627;
 }
 
-section h3.section-subheading {
+section h4.section-subheading {
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
     font-size: 16px;
     font-weight: 400;
 }
@@ -541,9 +547,11 @@ section h3.section-subheading, section h4.section-subheading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     bottom:0; left:0;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    background: rgba(255, 215, 0, .2);  
+    /*background: rgba(255, 215, 0, 1);  */
+    background: rgba(170, 170, 170, .2);
 }
 
 .portfolio-item-container {
@@ -553,7 +561,7 @@ section h3.section-subheading, section h4.section-subheading {
 }
 
 div.portfolio-hover hr {
-    border-color: #fff;
+    border-color: #222;
     width: 10%;
     -webkit-transition: all ease .s;
     -moz-transition: all ease .3s;
@@ -579,7 +587,7 @@ p::-moz-selection, h2::-moz-selection, .intro-heading::-moz-selection {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: #222;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -604,8 +612,10 @@ p::-moz-selection, h2::-moz-selection, .intro-heading::-moz-selection {
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-    margin: 0;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 12px 0 0 0;
+    color: #222;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
     font-size: 14px;
 }
 
@@ -627,11 +637,6 @@ p::-moz-selection, h2::-moz-selection, .intro-heading::-moz-selection {
 
 aside.clients img {
     margin: 50px auto;
-}
-
-section#contact, section#portfolio {
-    background-color: #111;
-    background-image: url(../img/binding_dark.png);
 }
 
 section#contact .form-group {
