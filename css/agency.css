@@ -6,7 +6,6 @@
 /*http://paletton.com/#uid=53O0u0k3V4WaYgf7Lb1ac80gJaQ*/
 body {
     overflow-x: hidden;
-    /*font-family: Arial, Helvetica, sans-serif;*/
     color: #313133;
 }
 
@@ -39,8 +38,8 @@ h4.item-intro {
 }
 
 hr {
-    width: 80%;
-    border-color: #1B2627;
+    width: 50%;
+    border-color: #ccc;
 }
 
 h2.light {
@@ -237,18 +236,25 @@ iframe {
 
 .btn-primary {
     border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fff;
-    background-color: rgba(10, 10, 10, 0.9);
+    padding: 15px 30px;
+    color: #000;
+    background-color: rgba(0,0,0,0);
 }
 
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active{
-    background-color: #111;
+.btn-primary:hover {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 15px 30px;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .btn-primary:active,
@@ -334,8 +340,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand:hover {
-    color: #ccac00;
-    opacity: 1;
+    color: #ffd700;
+    opacity: 0.9;
 }
 
 .navbar-default .navbar-collapse {
@@ -354,27 +360,27 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
     /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     letter-spacing: 1px;
+    font-weight: normal;
     color: #fff;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #DDD;
+    color: #ccc;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
     .navbar-default .navbar-nav>.active>a:focus {
-        color: #DDD;
+        color: #ccc;
         background-color: rgba(10, 10, 10, 0);
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #DDD;
+    color: #ccc;
     background-color: rgba(10, 10, 10, 0);
 }
 
@@ -408,31 +414,13 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 0 0 10px 0;
-        background-color: rgba(10, 10, 10, 1);
-        box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-
-    }
-
-    .top-shadow {
-        box-shadow: 0 -5px 5px rgba(0,0,0,0.9);
-    }
-
-    .bottom-shadow {
-        box-shadow: 0 5px 5px rgba(0,0,0,0.9);
+        padding: 10px 0;
+        background-color: #111;
+        box-shadow: 0 0px 8px rgba(50,50,50,0.2);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
         opacity: 1;
-    }
-
-    .navbar-default .navbar-nav>.active>a {
-        border-bottom: 3px solid #DDD;
-    }
-
-    .navbar-default .navbar-nav>.active>a:hover,
-    .navbar-default .navbar-nav>.active>a:focus {
-        border-bottom: 3px solid #DDD;
     }
 }
 
@@ -499,17 +487,17 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 20px 0;
 }
 
 section h2 {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 25px;
     color: #1B2627;
 }
 
-section h4.section-subheading {
+section h4.section-subheading, .item-intro {
     text-transform: none;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-style: italic;
@@ -523,7 +511,7 @@ section h3.section-subheading, section h4.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 75px 0;
     }
 }
 
@@ -639,28 +627,6 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact .form-group {
-    margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-    height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-    height: 236px;
-}
-
-section#contact .form-control:focus {
-    border-color: #111;
-    box-shadow: none;
-}
-
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -716,7 +682,7 @@ footer ul.quicklinks {
 }
 
 ul.social-buttons {
-    margin-bottom: 0;
+    margin: 30px;
 }
 
 ul.social-buttons li a {
@@ -728,7 +694,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     opacity: 1;
-    background-color: #FFF;
+    background-color: #ddd;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -748,7 +714,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #CCC;
+    background-color: #ffd700;
     opacity: 1;
 }
 
