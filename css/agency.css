@@ -113,7 +113,9 @@ h4.white {
 ul#contact-list{
     font-size: 14pt;
     list-style: none;
-    margin-left: -45px;
+    margin: 40px 0 40px -45px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #down-arrow {
@@ -163,11 +165,16 @@ li.job {
     margin-top: 10px;
     text-align: left;
     float: left;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    text-transform: none;
+    font-size: 10pt;
 }
 
 .fancy-text {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-style: italic;
+    text-transform: none;
 }
 
 .text-primary {
@@ -216,6 +223,11 @@ h6 {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
+}
+
+h2, h4 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    /*font-style: italic;*/
 }
 
 .img-centered {
@@ -335,7 +347,8 @@ fieldset[disabled] .btn-xl.active {
     letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
     color: #ffd700;
 }
 
@@ -686,6 +699,7 @@ ul.social-buttons {
 }
 
 ul.social-buttons li a {
+    margin: 0 50px;
     display: block;
     width: 45px;
     height: 45px;
