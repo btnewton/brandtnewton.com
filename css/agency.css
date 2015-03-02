@@ -115,11 +115,22 @@ ul#contact-list{
     margin: 40px 0 40px -45px;
 }
 
+.school-info li {
+    margin-left: 10px;
+}
+
 ul#contact-list li {
     font-size: 14pt;
     /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin: 20px;
+}
+
+.thin-border {
+    border-width: 1px;
+    border-color: #eee;
+    border-style: solid;
+
 }
 
 #down-arrow {
@@ -134,7 +145,7 @@ ul#contact-list li {
 }
 
 .shadow {
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
 }
 
 section#education {
