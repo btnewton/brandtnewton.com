@@ -253,6 +253,10 @@ h2, h4 {
     background-color: #f7f7f7;
 }
 
+.bg-white {
+    background-color: #fff;
+}
+
 .bg-darkest-gray {
     background-color: rgba(10, 10, 10, 0.9)
 }
@@ -655,37 +659,6 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact .text-danger {
-    color: #e74c3c;
-}
 
 footer {
     text-transform: uppercase;
@@ -752,10 +725,6 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
     outline: 0;
-}
-
-.portfolio-modal {
-    text-transform: uppercase;
 }
 
 .portfolio-modal .modal-content {
