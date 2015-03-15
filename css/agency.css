@@ -15,6 +15,21 @@ body {
     left: 90px;
 }
 
+.portfolio-caption h4 {
+    display: inline;
+}
+
+.portfolio-caption img {
+    width: 15px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    opacity: 0.8;
+}
+
+.portfolio-caption img:hover {
+    opacity: 0.9;
+}
+
 iframe {
     border: 0;
 }
