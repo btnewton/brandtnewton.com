@@ -12,7 +12,7 @@ body {
 .project-list {
     text-align: left;
     position: relative;
-    left: 90px;
+    left: 130px;
 }
 
 .portfolio-caption h4 {
@@ -233,14 +233,14 @@ a.active {
 }
 
 a {
-    color: #9ea6a8;
+    color: #009ACD;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #9ea6a8;
+    color: #009ACD;
     text-decoration: none;
 }
 

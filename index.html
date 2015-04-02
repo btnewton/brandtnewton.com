@@ -106,7 +106,7 @@
             <div class="row text-center newspaper">
                 <img id="profile-picture" src="img/about/brandt-newton-small.jpg" alt="Picture of Brandt Thomas Newton">
                 <h4 class="newspaper-headline">Career</h4>
-                <p>I am a junior at UVM seeking an internship in software development. I am very meticulous and passionate; I require a high level of quality for every software that I touch. I started programming 2 years ago but I constantly work to develop my technical and communication skills outside of class.</p>
+                <p>I am a junior at UVM and a Software Engineering intern at Mach7 Technologies. I am very meticulous and passionate; I require a high level of quality for every software that I touch. I started programming 2 years ago but I constantly work to develop my technical and communication skills outside of class.</p>
                 <h4 class="newspaper-headline">Computer Science</h4>
                 <p>I discovered programming and Computer Science 2 years ago during an introductory Matlab class that I part of my Mechanical Engineering program. I enjoyed the class and that summer I taught myself Java. Halfway through the following semester I switched my major to Computer Science (BS). I believe that working hard in class is not enough to succeed in this field. The world of Computer Science is constantly evolving and requires passion and the ability to self teach. I set aside a minimum of 2 hours every day to learn new concepts and write or design high quality code.</p>
                 <p>In my free time I am currently developing an Android <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">app</a>, practicing Head First: Design Patterns and maintaining this website.</p>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <p>I am very confident with Java: I am currently a TA for a UVM Java class and I practice every day. Additionally I am confident with SQL (MySQL &amp; SQLite), PHP and XML. I also have experience with Python, as a TA for a UVM Python class, Git, CSS and JavaScript. I regularly use both Windows and Mac OS X.</p>
+                <p>I consider myself very proficient in Java: I am currently a TA for a UVM Java class and I practice every day. Additionally, I am confident with SQL (MySQL &amp; SQLite) and PHP. I also have experience with as a Python class TA, Git, CSS and JavaScript. I regularly use both Windows and Mac OS X.</p>
             </div>
         </div>
     </section>
@@ -214,7 +214,7 @@
                         <h4>Diet App</h4>
                         <p class="">A specialized dietary Android app.</p>
                     </div>
-                <!-- </div>
+                </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-item-container">
@@ -229,7 +229,7 @@
                         <h4>Code Design</h4>
                         <p class="">An example of code design</p>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -418,7 +418,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <span id="last-updated">Last Updated March, 2015</span> |
+                    <span id="last-updated">Last Updated April, 2015</span> |
                     <a href="http://ironsummitmedia.github.io/startbootstrap-agency/">Original Template</a> |
                     <span class="fancy-text">Title Image by <a href="http://dobai.co">Viktor Dobai</a></span>
                 </div>
@@ -488,7 +488,7 @@
                             <span img-class="img-responsive img-centered" img-path="portfolio/buildr_screen.jpg"></span>
                             <p><a href="https://btnewton.w3.uvm.edu/cs148/assignment10/public/">Buildr</a> allows users to post the hardware and design specifications of their computer as well as a description and pictures. Users can view and comment on and like other's computers. Statistics on popular hardware, computers and designs are also available to help prospective system builders with design choices.</p>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
-                            <p>HTML, PHP, MySQL, Apache, CSS, JavaScript, JQuery, and Charts.js API</p>
+                            <p>HTML, PHP, MySQL, Apache, CSS, JavaScript, JQuery, Charts.js API &amp; <a href="https://github.com/btnewton/CS-148-Final-Project">GitHub</a></p>
                             <h4 class="item-section">Accomplishments</h4><hr>
                             <p>Won best in class: Intermediate Web Design at the 2014 <a href="http://www.uvm.edu/~csfair/2014/home.php">UVM CS Fair</a> Sponsored by Google</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -624,13 +624,21 @@
                             <h4 class="item-intro">An example of code design</h4>
                             <span img-class="img-responsive img-centered" img-path="portfolio/calc_screen.png"></span>
                             <p>In about 10 hours I began to learn the .NET Framework and produced a Windows Form calculator app.</p>
+                            <h4 class="item-section">Features</h4><hr>
+                            <div class="project-list-wrapper">
+                                <ul class="project-list">
+                                    <li>Add, subtract, multiply and divide operations.</li>
+                                    <li>Clear, delete and negate transformations.</li>
+                                    <li>Record of all recent calculations.</li>
+                                    <li>Supports GUI &amp; keyboard input.</li>
+                                </ul>
+                            </div>
                             <h4 class="item-section">MVC <span style="text-transform: lowercase;">ish</span></h4><hr>
-                            <p>I adapted the MVC design pattern to seperate the code that all calculators share from the code that varies. This reduces duplicate code and makes it easier to develop new calculators.</p>
-                            <p>When the app is launched a calculator model object is created and passed into the form’s constructor. The form implements 3 observer interfaces and registers itself with the calculator instance. The form observers state changes in the calculators answer, operation history and operand fields. I chose this configuration of observers to accommodate different form displays. This version has only 2 fields that display information so answers will replace the operand when updated.</p>
+                            <p>I always design software with evolution in mind: one of my goals was to make adding additional calculators and functionality easy. I adapted the MVC design pattern to separate the code that all calculators share from the code that varies. Different calculator forms (view-controllers), such as standard or scientific, can be swapped out while the model remains the same.</p>
                             <h4 class="item-section">Observer Pattern</h4><hr>
-                            <p>There is an observer for each field of the model that may be displayed. This allows complicated views to display more information, or in this case the answer and operand share the same text box.</p>
+                            <p>The form implements 3 observer interfaces and registers itself with the calculator instance. The form observers state changes in the calculators answer, operation history and operand fields. I chose this configuration of observers to accommodate different form displays. This version has only 2 fields that display information so answers will temporarily replace the operand when updated.</p>
                             <?prettify?>
-                            <pre class="prettyprint linenums">
+                            <pre class="prettyprint linenums" style="max-height:400px">
 partial class CalculatorForm : Form, AnswerObserver, HistoryObserver, OperandObserver
 {
     CalculatorInterface model;
@@ -654,9 +662,12 @@ partial class CalculatorForm : Form, AnswerObserver, HistoryObserver, OperandObs
     public void UpdateHistory()
     {
         string history = model.History;
+        
+        if (history.Length > 34)
+        {
+            history = "..." + history.Substring(history.Length - 28);
+        }
 
-        // Trim history to fit TextBox 
-        ...
         historyTextBox.Text = history;
     }
 
@@ -665,22 +676,29 @@ partial class CalculatorForm : Form, AnswerObserver, HistoryObserver, OperandObs
         // Overwrite operand display
         operandTextBox.Text = model.CurrentValue;
     }
+
     ...
 }
 </pre>
-                            <p>The controller manipulates the model by changing the value of the operand with the PutDigit and ApplyTransformation methods. ApplyTransformation accepts objects that implement the Transformation interface. Transformations include delete, clear, and put decimal functions. New transformations can be created without changing the calculator class.  The controller can also set the operation of the calculator. Operations implement the Operation interface and are used to perform operations between the current value and the operand fields. They are responsible for their own error handling as needed. The model will apply the current operation if the operand is not empty before setting the new operation.</p>
+                            <p>The controller manipulates the model by changing the value of the operand with the PutDigit and ApplyTransformation methods. ApplyTransformation accepts objects that implement the Transformation interface. Transformations include delete, clear, and put decimal functions. New transformations can be easily created by implementing the Transformation interface and without changing the model.</p>
                             <h4 class="item-section">Strategy Pattern</h4><hr>
-                            <p>I chose to use the Strategy Design pattern for controlling the operation of the calculator to make it easier to control the apps features. One example is the stock Windows Calculator which allows the user to switch between standard, scientific and other calculator types on the fly. Only one of my calculator models would be required for this behavior. There is no duplicate code and only the view and controller need to be changed. Other programmers could also easily implement their own transformation and operation classes. Again, the multiple observer design also accommodates additional view designs.</p>
-                            <h4 class="item-section">Features</h4><hr>
-                            <p>This calculator app is capable of all basic mathematical operations and can negate, delete, clear and insert decimal places. It also displays the calculation history. It is operated via the GUI or keyboard. A lot of design choices were influenced by the Calculator program that comes with Windows.</p>
-                            <ul class="project-list">
-                                <li>Add, subtract, multiply and divide operations.</li>
-                                <li>Clear, delete and negate transformations.</li>
-                                <li>Record of all recent calculations.</li>
-                                <li>Supports GUI &amp; keyboard input.</li>
-                            </ul>
+                            <p>The Strategy Design pattern is used for controlling the operation of the calculator to make it easier to control the apps features. All operations implement the Operation interface and are used to perform operations between the current value and the operand fields. They are responsible for their own error handling as needed. The model will apply the current operation if the operand is not empty before setting the new operation.</p>
+                            <?prettify?>
+                            <pre class="prettyprint linenums">
+class AddOperation : Operation
+{
+    public double Calculate(double operand1, double operand2)
+    {
+        return operand1 + operand2;
+    }
+    public override string ToString()
+    {
+        return "+";
+    }
+}
+</pre>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
-                            <p>.NET Framework &amp; C#</p>
+                            <p>.NET Framework, C# &amp; <a href="https://github.com/btnewton/Calculator">GitHub</a></p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
