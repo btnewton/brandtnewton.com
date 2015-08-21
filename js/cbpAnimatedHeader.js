@@ -15,6 +15,7 @@ var cbpAnimatedHeader = (function() {
 		didScroll = false,
 		changeHeaderOn = 350;
 	var name_title = $('.navbar-header page-scroll');
+	var navbar_brand = $('.navbar-brand');
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -29,10 +30,12 @@ var cbpAnimatedHeader = (function() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
+			navbar_brand.show();
 			name_title.fadeOut("slow");
 		}
 		else {
 			classie.remove( header, 'navbar-shrink' );
+			navbar_brand.hide();
 			name_title.fadeIn("slow");
 		}
 		didScroll = false;
