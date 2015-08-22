@@ -202,10 +202,11 @@ iframe {
 
 .portfolio-caption h4 {
     display: inline;
+    font-size: 1.3em;
 }
 
 .portfolio-caption img.trophy {
-    width: 15px;
+    height: 1.4em;
     margin-left: 10px;
     padding-bottom: 5px;
     opacity: 0.8;
