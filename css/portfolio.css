@@ -23,11 +23,13 @@ h4.item-intro {
     position:relative;
 }
 
-.project-list {
+ul.project-list {
     text-align: left;
     padding: 15px;
-    /*position: relative;*/
-    /*left: 130px;*/
+}
+
+ul.project-list li {
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 375px) {

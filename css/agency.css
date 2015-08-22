@@ -668,6 +668,10 @@ ul.social-buttons li a {
     cursor: pointer;
 }
 
+ul.social-buttons li {
+    margin-bottom: 10px;
+}
+
 #linkedin {
     position: relative;
     left: 2px;
