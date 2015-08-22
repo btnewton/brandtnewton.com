@@ -13,9 +13,10 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap-min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="img/brandtnewton.ico" />
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,13 +25,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    //   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-52756625-2', 'auto');
-      ga('send', 'pageview');
+    //   ga('create', 'UA-52756625-2', 'auto');
+    //   ga('send', 'pageview');
     </script>
 
     <!-- Google Code Prettify -->
@@ -71,7 +72,7 @@
                         <a class="page-scroll" href="#education">Education</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#work">Work Experience</a>
+                        <a class="page-scroll" href="#work">Experience</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -88,7 +89,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading" data-scroll-speed="6">Brandt Newton
-                <a href="#about" class="page-scroll"><img id="down-arrow" src="img/down-arrow-icon.png" alt="down arrow" width="50"/></a>
+                        <a href="#about" id="down-arrow" class="page-scroll"><img id="down-arrow" src="img/down-arrow-icon.png" alt="down arrow" width="50"/></a>
                 </div>
             </div>
         </div>
@@ -137,13 +138,43 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal-builder" class="portfolio-link" data-toggle="modal">
+                         <div class="portfolio-item-container">
+                            <div class="portfolio-hover portfolio-item-background">
+                                    <div class="portfolio-hover-content">
+                                    </div>
+                            </div>
+                        <img class="img-responsive" src="img/portfolio/bldr_icon.png"></img>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption shadow">
+                        <h4>Builder</h4><a href="http://www.uvm.edu/~csfair/2014/home.php"><img class="trophy" src="img/trophy.png"></a>
+                        <p class="">Compare your computer hardware.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal-repcheck" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-item-container">
                             <div class="portfolio-hover portfolio-item-background">
                                 <div class="portfolio-hover-content">
                                 </div>
                             </div>
-                            <span img-class="img-responsive" img-path="portfolio/expulse_logo.png"></span>
+                            <img class="portfolio-logo img-responsive" src="img/portfolio/repcheck_logo.png"></img>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption shadow">
+                        <h4>Rep Check</h4>
+                        <p class="">One Rep Max Calculator</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal-expulse" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-item-container">
+                            <div class="portfolio-hover portfolio-item-background">
+                                <div class="portfolio-hover-content">
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="img/portfolio/expulse_logo.png"></img>
                         </div>
                     </a>
                     <div class="portfolio-caption shadow">
@@ -152,75 +183,12 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                         <div class="portfolio-item-container">
-                            <div class="portfolio-hover portfolio-item-background">
-                                    <div class="portfolio-hover-content">
-                                    </div>
-                            </div>
-                        <span img-class="img-responsive" img-path="portfolio/bldr_icon.png"></span>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption shadow">
-                        <h4>Builder</h4><a href="http://www.uvm.edu/~csfair/2014/home.php"><img src="img/trophy.png"></a>
-                        <p class="">Compare your computer hardware.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal-calculator" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-item-container">
                             <div class="portfolio-hover portfolio-item-background">
-                                    <div class="portfolio-hover-content">
-                                    </div>
+                                <div class="portfolio-hover-content"></div>
                             </div>
-                        <span img-class="img-responsive" img-path="portfolio/snowball_icon_alpha.png"></span>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption shadow">
-                        <h4>Snowball</h4><a href="http://www.uvm.edu/~csfair/2013/home.php"><img src="img/trophy.png"></a>
-                        <p class="">2D Java Game</p>
-                    </div>
-                </div>
-            
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-item-container">
-                            <div class="portfolio-hover portfolio-item-background">
-                                    <div class="portfolio-hover-content">
-                                    </div>
-                            </div>
-                        <span img-class="img-responsive" img-path="portfolio/bfg_icon.png"></span>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption shadow">
-                        <h4>Barre Forest Guide</h4>
-                        <p class="">An iOS town forest guide.</p>
-                    </div>
-                </div>
-                <!-- Add additional projects in a similar manner -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-item-container">
-                            <div class="portfolio-hover portfolio-item-background">
-                                <div class="portfolio-hover-content">
-                                </div>
-                            </div>
-                            <span img-class="img-responsive" img-path="portfolio/wip_icon.png"></span>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption shadow">
-                        <h4>Diet App</h4>
-                        <p class="">A specialized dietary Android app.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-item-container">
-                            <div class="portfolio-hover portfolio-item-background">
-                                <div class="portfolio-hover-content">
-                                </div>
-                            </div>
-                            <span img-class="img-responsive" img-path="portfolio/c_sharp.png"></span>
+                            <img class="img-responsive" src="img/portfolio/c_sharp.png"></img>
                         </div>
                     </a>
                     <div class="portfolio-caption shadow">
@@ -229,20 +197,63 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal-snowball" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-item-container">
+                            <div class="portfolio-hover portfolio-item-background">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                        <img class="img-responsive" src="img/portfolio/snowball_icon_alpha.png"></img>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption shadow">
+                        <h4>Snowball</h4><a href="http://www.uvm.edu/~csfair/2013/home.php"><img class="trophy" src="img/trophy.png"></a>
+                        <p class="">2D Java Game</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal-bfg" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-item-container">
+                            <div class="portfolio-hover portfolio-item-background">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                        <img class="img-responsive" src="img/portfolio/bfg_icon.png"></img>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption shadow">
+                        <h4>Barre Forest Guide</h4>
+                        <p class="">An iOS town forest guide.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal-diet" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-item-container">
+                            <div class="portfolio-hover portfolio-item-background">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                            <img class="img-responsive" src="img/portfolio/wip_icon.png"></img>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption shadow">
+                        <h4>Diet App</h4>
+                        <p class="">A specialized dietary Android app.</p>
+                    </div>
+                </div>
+
+<!--                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal-mach7" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-item-container">
                             <div class="portfolio-hover portfolio-item-background">
                                 <div class="portfolio-hover-content">
                                 </div>
                             </div>
-                            <span img-class="img-responsive" img-path="portfolio/c_sharp.png"></span>
+                            <img class="img-responsive" src="img/portfolio/c_sharp.png"></img>
                         </div>
                     </a>
                     <div class="portfolio-caption shadow">
                         <h4>Internship Project</h4>
                         <p class="">Redesigned an old Visual Basic app.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -257,7 +268,7 @@
             </div>
             <div class="row">
                 <div class="school">
-                    <span img-path="logos/uvm_logo.jpg"></span>
+                    <img src="img/logos/uvm_logo.jpg"></img>
                     <div class="school-info">
                         <h4>University of Vermont</h4>
                         <div style="clear:both;"></div>
@@ -270,7 +281,7 @@
                 </div>
                 <div style="clear:both;"></div>
                 <div class="school">
-                    <span img-path="logos/stja_logo.png"></span>
+                    <img src="img/logos/stja_logo.png"></img>
                     <div class="school-info">
                         <h4>Saint Johnsbury Academy High School</h4>
                         <div style="clear:both;"></div>
@@ -486,7 +497,7 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-expulse" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -501,7 +512,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Expulse.org</h2>
                             <h4 class="item-intro ">A private &amp; secure support network.</h4>
-                            <span img-class="img-responsive thin-border" img-path="portfolio/expulse_screen.jpg"></span>
+                            <img class="img-responsive thin-border" src="img/portfolio/expulse_screen.jpg"></img>
                             <p><a href="http://expulse.org">Expulse.org</a> allows a people who have been forced from a specific religious community to privately and securely connect with a support network. A vouching system allows the support network to add new users to the "inner-circle" which allows them access to additional features. Developed with PHP, MySQL and JS on an Apache Server. Tested by over 15 members of the target audience.</p>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
                             <p>HTML, PHP, MySQL, CSS, JavaScript, JQuery, and Google Analytics</p>
@@ -527,7 +538,7 @@
     </div>
 
     <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-builder" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -541,7 +552,7 @@
                         <div class="modal-body">
                             <h2>Buildr</h2>
                             <h4 class="item-intro ">Compare your computer hardware</h4>
-                            <span img-class="img-responsive img-centered" img-path="portfolio/buildr_screen.jpg"></span>
+                            <img class="img-responsive img-centered" src="img/portfolio/buildr_screen.jpg"></img>
                             <p><a href="https://btnewton.w3.uvm.edu/cs148/assignment10/public/">Buildr</a> allows users to post the hardware and design specifications of their computer as well as a description and pictures. Users can view and comment on and like other's computers. Statistics on popular hardware, computers and designs are also available to help prospective system builders with design choices.</p>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
                             <p>HTML, PHP, MySQL, Apache, CSS, JavaScript, JQuery, Charts.js API &amp; <a href="https://github.com/btnewton/CS-148-Final-Project">GitHub</a></p>
@@ -556,7 +567,7 @@
     </div>
 
     <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-snowball" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -571,7 +582,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Snowball Game</h2>
                             <h4 class="item-intro ">2D Java Game</h4>
-                            <span img-class="img-responsive img-centered" img-path="portfolio/snowball_screen.png"></span>
+                            <img class="img-responsive img-centered" src="img/portfolio/snowball_screen.png"></img>
                             <p>Less than half a year after completing my first programming course I submitted this game, which is still a work in progress, to the 2013 UVM CS Fair. I followed a tutorial series to get the initial framework down and then optimized it and added features.</p>
                             <p>The tutorial created a top down world that allowed the player to move a character around with the arrow keys. I modified the world rendering algorithms for an isometric camera view rather than orthographic. Tiles were randomly selected to be covered in snow. This involved a lot of changes and some optimization. Next I added characters and put the player in control of a cursor which could now move isometrically, one square at a time and select characters. Selecting a character would bring up an action menu. The action menu allowed the player to tell the selected character to move to a new tile. The character would efficiently navigate around other characters to the specified tile. Players could also change the direction that characters were facing.</p>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
@@ -587,7 +598,7 @@
     </div>
 
     <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-bfg" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -602,7 +613,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Barre Forest App</h2>
                             <h4 class="item-intro ">An iOS town forest guide.</h4>
-                            <span img-class="img-responsive img-centered" img-path="portfolio/bfg_screen.png"></span>
+                            <img class="img-responsive img-centered" src="img/portfolio/bfg_screen.png"></img>
                             <p>This app was created in CS 275: Mobile Apps &amp; Embedded Devices for the Barre town forest. It was designed to assist forest users in navigating the various walking and biking trails, historic sites and Frisbee golf course. We chose to use Google Maps and SQLite so our app could be more easily ported to Android. This was completed in one semester.</p>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
                             <p>Objective-C, SQLite, Python, and KML</p>
@@ -623,7 +634,7 @@
     </div>
 
     <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-diet" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -638,7 +649,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Dietary Android App</h2>
                             <h4 class="item-intro ">A specialized dietary Android app.</h4>
-                            <span img-class="img-responsive img-centered" img-path="portfolio/diet_screen.png"></span>
+                            <img class="img-responsive img-centered" src="img/portfolio/diet_screen.png"></img>
                             <p>This work in progress was inspired by interest in nutrition, event driven programming and the Android operating system. I also wanted to learn more about mobile app development than was taught in class. I am also teaching myself JUnit testing.</p>
                             <p>I do plan on releasing this app when it is finished.</p>
                             <h4 class="item-section">Working Features</h4><hr>
@@ -663,7 +674,7 @@
     </div>
 
     <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-calculator" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -678,7 +689,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Code Design</h2>
                             <h4 class="item-intro">An example of code design</h4>
-                            <span img-class="img-responsive img-centered" img-path="portfolio/calc_screen.png"></span>
+                            <img class="img-responsive img-centered" src="img/portfolio/calc_screen.png"></img>
                             <p>In about 10 hours I began to learn the .NET Framework and produced a Windows Form calculator app. <br>Check out the code <a href="https://github.com/btnewton/Calculator">here</a>.</p></p>
                             <h4 class="item-section">Features</h4><hr>
                             <div class="project-list-wrapper">
@@ -794,7 +805,7 @@ public void Execute()
     </div>
 
     <!-- Portfolio Modal 7 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-mach7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -808,7 +819,7 @@ public void Execute()
                         <div class="modal-body">
                             <h2>Internship Project</h2>
                             <h4 class="item-intro ">Redesigned an old Visual Basic app.</h4>
-                            <span img-class="img-responsive img-centered" img-path="portfolio/diet_screen.png"></span>
+                            <img class="img-responsive img-centered" src="img/portfolio/diet_screen.png"></img>
                             <p>This work in progress was inspired by interest in nutrition, event driven programming and the Android operating system. I also wanted to learn more about mobile app development than was taught in class. I am also teaching myself JUnit testing.</p>
                             <p>I do plan on releasing this app when it is finished.</p>
                             <h4 class="item-section">Working Features</h4><hr>
@@ -832,6 +843,47 @@ public void Execute()
         </div>
     </div>
 
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal-repcheck" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Rep Check</h2>
+                            <h4 class="item-intro ">A Powerful One Rep Max Calculator</h4>
+                            <img class="img-responsive img-centered" src="img/portfolio/repcheck_screen.png"></img>
+                            <div class="clearfix">
+                                <a href="https://play.google.com/store/apps/details?id=com.brandtnewtonsoftware.rep_check"><img class="img-responsive img-right play-store-logo" src="img/logos/en_generic_rgb_wo_60.png"></img></a>
+                            </div>
+                            <p>This project that was meant to be a trial run for publishing an app but has evolved into </p>
+                            <h4 class="item-section">Features</h4><hr>
+                            <ul class="project-list">
+                                <li>Calculate your 1-20 rep max performance.</li>
+                                <li>Save sets to a local SQLite Database.</li>
+                            </ul>
+                            <h4 class="item-section">Future Features</h4><hr>
+                            <ul class="project-list">
+                                <li>Ad free version</li>
+                                <li>Delete and add sets</li>
+                                <li>Tutorial</li>
+                            </ul>
+                            <h4 class="item-section">Tools &amp; Technologies</h4><hr>
+                            <p>Android OS, Java, SQLite, Git, JUnit 3</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -847,8 +899,6 @@ public void Execute()
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
     <script src="js/portfolio.js"></script>
-
-    <script src="js/loadImages.js"></script>
 </body>
 
 </html>
