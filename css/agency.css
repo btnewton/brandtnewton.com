@@ -652,7 +652,7 @@ ul.social-buttons {
 }
 
 ul.social-buttons li a {
-    margin: 0 50px;
+    margin: 0 10px;
     display: block;
     width: 45px;
     height: 45px;
@@ -669,7 +669,7 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #linkedin {
@@ -679,7 +679,10 @@ ul.social-buttons li {
 }
 
 #github {
-    position: relative;
+    width: 32px;
+}
+
+#instagram {
     width: 32px;
 }
 
@@ -732,4 +735,15 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #5D6F72;
+}
+
+#git-checkpoint form {
+    width: 100%;
+    text-align:center;
+}
+
+#git-checkpoint button {
+    margin-bottom: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
 }

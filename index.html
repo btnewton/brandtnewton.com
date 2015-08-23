@@ -25,13 +25,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
-    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    //   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    //   ga('create', 'UA-52756625-2', 'auto');
-    //   ga('send', 'pageview');
+      ga('create', 'UA-52756625-2', 'auto');
+      ga('send', 'pageview');
     </script>
 
     <!-- Google Code Prettify -->
@@ -107,7 +107,7 @@
             <div class="row text-center newspaper">
                 <img id="profile-picture" src="img/about/brandt-newton-small.jpg" alt="Picture of Brandt Thomas Newton">
                 <h4 class="newspaper-headline">Career</h4>
-                <p>I am a senior at UVM and a Software Engineering intern at Mach7 Technologies. I am very meticulous and passionate; I require a high level of quality for every software that I touch. I started programming 2 years ago but I constantly work to develop my technical, design and communication skills outside of class.</p>
+                <p>I am a senior at UVM and a Software Engineering intern at Mach7 Technologies. I am meticulous and passionate; I require a high level of quality for every software that I touch. I started programming 3 years ago but I constantly work to develop my technical, design and communication skills outside of class.</p>
                 <h4 class="newspaper-headline">Computer Science</h4>
                 <p>I discovered programming and Computer Science 2 years ago during an introductory Matlab class that I part of my Mechanical Engineering program. I enjoyed the class and that summer I taught myself Java. Halfway through the following semester I switched my major to Computer Science (BS). The Computer Science program at UVM focuses on theory and problem solving so I set aside a minimum of 2 hours every day to learn new concepts and write or design high quality code.</p>
                 <h4 class="newspaper-headline">Personal</h4>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <p>I consider myself very proficient in Java: I am currently a TA for a UVM Java class and I practice every day. Additionally, I am confident with C#, SQL (SQL, MySQL &amp; SQLite), PHP, CSS and JavaScript. I also have experience with Git, and Python.</p>
+                <p>I consider myself proficient in Java: I am currently a TA for a UVM Java class and I practice every day. Additionally, I am confident with C#, SQL (SQL, MySQL &amp; SQLite), PHP, CSS and JavaScript. I also have experience with Git, and Python.</p>
             </div>
         </div>
     </section>
@@ -426,14 +426,18 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact</h2><hr>
                     <ul id="contact-list">
-                        <li>&#098;&#110;&#101;&#119;&#116;&#111;&#110;&#049;&#052;&#057;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</li>
+                        <li>brandt.software@gmail.com</li>
                         <li>Burlington, Vermont</li>
                     </ul>
                     <ul class="list-inline social-buttons">
                         <li><a href="https://plus.google.com/111859190494333798830/about"><img id="github" src="img/logos/gplus.png" alt="google + logo"></a></li>
-                        <li><a href="https://www.linkedin.com/pub/brandt-newton/91/270/649"><img id="linkedin" src="img/logos/linkedin.png" alt="linked in logo"></a>
+                        <li><a href="https://instagram.com/sithlord_bniz/">
+                        <img id="instagram" src="img/logos/instagram.gif" alt="instagram logo"/></a>
                         </li>
-                        <li><a data-toggle="modal" data-target=".git-checkpoint"><img id="github" src="img/logos/github.png" alt="github logo"></a></li>
+                        <li><a href="https://www.linkedin.com/pub/brandt-newton/91/270/649"><img id="linkedin" src="img/logos/linkedin.png" alt="linked in logo"/></a>
+                        </li>                        
+                        <li><a data-toggle="modal" data-target="#git-checkpoint">
+                        <img id="github" src="img/logos/github.png" alt="github logo"></a></li>
                     </ul>
                 </div>
             </div>
@@ -452,7 +456,7 @@
         </div>
     </footer>
 
-    <div class="agency-modal modal fade git-checkpoint" tabindex="-1" role="dialog" aria-labelledby="git-checkpoint">
+    <div class="agency-modal modal fade" id="git-checkpoint" tabindex="-1" role="dialog" aria-labelledby="git-checkpoint">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -460,20 +464,16 @@
                 <h4 class="modal-title">Before proceeding...</h4>
               </div>
               <div class="modal-body">
-                    <p>Before proceeding to my GitHub page:
+                    <p>Before proceeding to my GitHub page please note:
                     <ol>
-                        <li>I have 5 projects in private repositories.</li>
+                        <li>Most of my work is done in private repositories.</li>
                         <li>I have a 34 day streak of substantial commits.</li>
                     </ol>
                     </p>
               </div>
                <form action="https://github.com/btnewton" class="clearfix">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-times"></i>Continue</button>
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-times"></i>Got it</button>
                 </form>
-              <div class="modal-footer">
-                   
-              </div>
-              </p>
             </div>
         </div>
     </div>
