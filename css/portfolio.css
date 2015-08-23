@@ -208,9 +208,10 @@ iframe {
 }
 
 .portfolio-caption img.trophy {
-    height: 1.4em;
+    height: 1.3em;
     margin-left: 10px;
-    padding-bottom: 5px;
+    position: relative;
+    bottom: 4px;
     opacity: 0.8;
 }
 
