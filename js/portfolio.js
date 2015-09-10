@@ -18,4 +18,8 @@ $( document ).ready(function() {
 			$(this).find(".portfolio-hover").stop(true).animate({opacity: "0"});
 		}
 	);
+
+	$(".swap-modal").click(function() {
+		$($(this).attr('href')).modal('show');
+	});
 });
