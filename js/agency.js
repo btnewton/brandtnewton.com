@@ -5,6 +5,7 @@
  */
 
 $(document).ready(function() {
+    // Modal links
 	var url = window.location.href;
 	var hostname = window.location.origin;
 
@@ -13,6 +14,16 @@ $(document).ready(function() {
 	if (target.substring(1, 8) === "project"){
 		$(target).modal('show');
 	}
+
+    $("a.portfolio-link").click(function(){
+        window.location.hash = $(this).attr("href");
+    });
+
+    // $("a.page-scroll").click(function(){
+        // window.location.hash = $(this).attr("href");
+    // });
+
+    $(window).hashchange();
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -23,6 +34,8 @@ $(function() {
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
+        window.location.hash = $(this).attr("href");
+
     });
 });
 
