@@ -4,6 +4,17 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+$(document).ready(function() {
+	var url = window.location.href;
+	var hostname = window.location.origin;
+
+	console.log(hostname);
+	var target = url.substring(hostname.length + 1);
+	if (target.substring(1, 8) === "project"){
+		$(target).modal('show');
+	}
+});
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
