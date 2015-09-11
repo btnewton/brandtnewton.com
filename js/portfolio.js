@@ -11,7 +11,7 @@ $( document ).ready(function() {
 	hitbox.hover(
 		function() {
 			$( this ).find(content).stop(true).fadeIn();
-			$( this ).find(".portfolio-hover").stop(true).animate({opacity: "1" });
+			$( this ).find(".portfolio-hover").stop(true).animate({opacity: "." });
 		},
 		function() {
 			$( this ).find(content).stop(true).fadeOut();

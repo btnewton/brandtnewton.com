@@ -195,8 +195,6 @@ li.job {
     margin-top: 10px;
     text-align: left;
     float: left;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-style: italic;
     text-transform: none;
     font-size: 10pt;
 }
@@ -204,6 +202,10 @@ li.job {
 .fancy-text {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-style: italic;
+    text-transform: none;
+}
+
+.no-text-transform {
     text-transform: none;
 }
 
@@ -533,7 +535,7 @@ img.play-store-logo {
 }
 
 header {
-    min-height: 300px;
+    min-height: 500px;
     text-align: center;
     color: #FFF;
     background-image: url(../img/stag_winter.jpg);
@@ -545,7 +547,7 @@ header {
 }
 
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 250px;
 }
 
 header .intro-text .intro-lead-in {

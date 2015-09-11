@@ -9,7 +9,6 @@ $(document).ready(function() {
 	var url = window.location.href;
 	var hostname = window.location.origin;
 
-	console.log(hostname);
 	var target = url.substring(hostname.length + 1);
 	if (target.substring(1, 8) === "project"){
 		$(target).modal('show');
