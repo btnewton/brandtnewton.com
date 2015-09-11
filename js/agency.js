@@ -7,9 +7,7 @@
 $(document).ready(function() {
     // Modal links
 	var url = window.location.href;
-	var hostname = window.location.origin;
-
-	var target = url.substring(hostname.length + 1);
+	var target = url.substring(url.indexOf("#"));
 	if (target.substring(1, 8) === "project"){
 		$(target).modal('show');
 	}
@@ -17,24 +15,17 @@ $(document).ready(function() {
     $("a.portfolio-link").click(function(){
         window.location.hash = $(this).attr("href");
     });
-
-    // $("a.page-scroll").click(function(){
-        // window.location.hash = $(this).attr("href");
-    // });
-
-    $(window).hashchange();
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
+        event.preventDefault();
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+        }, 1000, 'easeInOutExpo');
         window.location.hash = $(this).attr("href");
-
     });
 });
 

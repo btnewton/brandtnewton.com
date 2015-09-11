@@ -69,25 +69,21 @@ ul.project-list li {
     background: rgba(255, 255, 255, .8);
 }
 
-div.portfolio-hover hr {
-    border-color: #222;
-    width: 10%;
-    -webkit-transition: all ease .s;
-    -moz-transition: all ease .3s;
-    transition: all ease .3s;
-}
-
 div.portfolio-hover:hover hr {
     width: 85%;
 }
 
 .portfolio-item .portfolio-link {
     background-color: #FFF;
+    border: 1px solid rgba(230, 230, 230, 90);
+    -webkit-transition : border 300ms ease-out;
+    -moz-transition : border 300ms ease-out;
+    -o-transition : border 300ms ease-out;
+    transition : border 300ms ease-out;
+}
 
-    border-top: 1px solid rgba(230, 230, 230, 90);
-    border-left: 1px solid rgba(230, 230, 230, 90);
-    border-right: 1px solid rgba(230, 230, 230, 90);
-    border-bottom: 1px solid rgba(230, 230, 230, 90);
+.portfolio-item .portfolio-link:hover {
+    border: 1px solid rgba(215, 215, 215, 90);
 }
 
 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
