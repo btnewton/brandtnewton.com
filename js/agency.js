@@ -17,17 +17,20 @@ $(document).ready(function() {
     });
 });
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        event.preventDefault();
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1000, 'easeInOutExpo');
-        window.location.hash = $(this).attr("href");
+var $root = $('html, body');
+$('a.page-scroll').click(function() {
+    var href = $.attr(this, 'href');
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
     });
+    return false;
 });
+
+function setHash(hashValue) {
+    window.location.hash = hashValue;
+}
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
