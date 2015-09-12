@@ -10,7 +10,9 @@ $(document).ready(function() {
 	var target = url.substring(url.indexOf("#"));
 	if (target.substring(1, 8) === "project"){
 		$(target).modal('show');
-	}
+	} else {
+        $('.modal').modal('hide');
+    }
 
     $("a.portfolio-link").click(function(){
         window.location.hash = $(this).attr("href");

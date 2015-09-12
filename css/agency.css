@@ -155,12 +155,10 @@ ul#contact-list li {
     margin-bottom: 13px;
 }
 
-#down-arrow:hover {
-    opacity: 0.9;
-}
+
 
 .shadow {
-    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 section#education {
@@ -575,7 +573,7 @@ header .intro-text .intro-heading {
 
 
 section {
-    padding: 20px 0;
+    padding: 65px 0 20px 0;
 }
 
 section h2 {
@@ -599,7 +597,7 @@ section h3.section-subheading, section h4.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 75px 0;
+        padding: 90px 0;
     }
 }
 
@@ -668,6 +666,7 @@ ul.social-buttons li a {
     -moz-transition: all .3s;
     transition: all .3s;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 ul.social-buttons li {

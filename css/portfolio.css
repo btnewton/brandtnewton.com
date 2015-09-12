@@ -43,6 +43,10 @@ ul.project-list li {
     margin: 0 0 15px;
 }
 
+.portfolio-item a, .portfolio-caption {
+    border-radius: 5px;
+}
+
 .portfolio-item a{
     color: #000 !important;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
@@ -227,9 +231,6 @@ iframe {
     opacity: 0.8;
 }
 
-.portfolio-caption img.trophy:hover {
-    opacity: 0.9;
-}
 iframe {
     border: 0;
 }
