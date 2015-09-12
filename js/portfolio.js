@@ -1,25 +1,12 @@
 // Written by Brandt Newton for brandtnewton.com -2014
 
 $( document ).ready(function() {
-	hitbox = $( ".portfolio-item-container" );
-	content = $(".portfolio-hover-content");
-	hover_box = $(".portfolio-hover");
-
-	content.hide();
-	hover_box.css("opacity", "0");
-
-	hitbox.hover(
-		function() {
-			$( this ).find(content).stop(true).fadeIn();
-			$( this ).find(".portfolio-hover").stop(true).animate({opacity: "." });
-		},
-		function() {
-			$( this ).find(content).stop(true).fadeOut();
-			$(this).find(".portfolio-hover").stop(true).animate({opacity: "0"});
-		}
-	);
-
 	$(".swap-modal").click(function() {
+		$('.modal').modal('hide');
 		$($(this).attr('href')).modal('show');
+	});
+
+	$(".close-modal-btn").click(function() {
+		history.pushState('', document.title, window.location.pathname);
 	});
 });

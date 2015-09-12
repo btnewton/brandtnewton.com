@@ -430,8 +430,12 @@ fieldset[disabled] .btn-xl.active {
     cursor: pointer;
 }
 
-img.img-right {
+.float-right {
     float: right;
+}
+
+.float-left {
+    float: left;
 }
 
 img.play-store-logo {
@@ -653,6 +657,9 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     margin: 0 10px;
+}
+
+.fab {
     display: block;
     width: 45px;
     height: 45px;
@@ -661,7 +668,6 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     opacity: 1;
-    background-color: #ddd;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -669,21 +675,24 @@ ul.social-buttons li a {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
+.gold-bg {
+    background-color: rgb(255, 215, 0);
+}
+.gray-bg {
+    background-color: #DDD;
+}
+
 ul.social-buttons li {
     margin-bottom: 20px;
 }
 
-#linkedin {
+.fab .linkedin {
     position: relative;
     left: 2px;
     width: 32px;
 }
 
-#github {
-    width: 32px;
-}
-
-#instagram {
+.fab img {
     width: 32px;
 }
 
@@ -698,13 +707,6 @@ ul.social-buttons li {
 
 .agency-modal .modal-content{
     border-radius: 0 !important;
-}
-
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color: #ffd700;
-    opacity: 1;
 }
 
 .btn:focus,

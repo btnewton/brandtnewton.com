@@ -171,7 +171,7 @@ div.portfolio-hover:hover hr {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
+.portfolio-img, .portfolio-modal .fab {
     margin-bottom: 30px;
 }
 
