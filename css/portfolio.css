@@ -17,12 +17,6 @@ h4.item-intro {
     border-color: #1B2627;
 }
 
-.portfolio-item-container {
-/*    height:100%; 
-    width:100%; */
-    position:relative;
-}
-
 ul.project-list {
     text-align: left;
     padding: 15px;
