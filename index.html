@@ -13,7 +13,7 @@
     <title>Brandt Newton - Software Engineer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap-min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/brandtnewton.ico" />
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
@@ -37,180 +37,246 @@
 
     <!-- Google Code Prettify -->
     <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+    <link href="css/nav.css" type="text/css" rel="stylesheet" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100' rel='stylesheet' type='text/css'>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/easing.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script src="js/portfolio.js"></script>
+
     <script type="text/javascript" src="js/prettify.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
 
 </head>
 
 <body id="page-top" class="index" onload="prettyPrint()">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Brandt Newton</a>
+    <div id="nav-drawer-wrapper">
+        <div id="nav-drawer">
+            <div id="nav-drawer-title">
+                Brandt Newton
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
+            <div id="nav-drawer-list-wrapper">
+                <ul>
+                    <li class="dismiss-drawer">
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
+                    <li class="dismiss-drawer">
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
-                    <li>
+                    <li class="dismiss-drawer">
                         <a class="page-scroll" href="#education">Education</a>
                     </li>
-                    <li>
+                    <li class="dismiss-drawer">
                         <a class="page-scroll" href="#work">Experience</a>
                     </li>
-                    <li>
+                    <li class="dismiss-drawer">
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
+                <div class="nav-drawer-list-title">Resources</div>
+                <ul id="resources">
+                    <li><a href="/resume.pdf"><i class="material-icons">description</i></a></li>
+                    <span id="js-copytextarea" style="display:none">brandt.software@gmail.com</span>
+                    <li><i class="material-icons" id="js-textareacopybtn">email</i></li>
+                </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <div id="nav-shadow"></div>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <i id="nav-drawer-toggle" class="material-icons">menu</i>
+            <i id="return-button" data-dismiss="modal" class="material-icons clickable">close</i>
+            <a class="navbar-brand page-scroll" href="#page-top">Brandt Newton</a>
+        </div>
     </nav>
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading" data-scroll-speed="6">Brandt Newton
-                        <a href="#about" id="down-arrow" class="page-scroll"><img id="down-arrow" src="img/down-arrow-icon.png" alt="down arrow" width="50"/></a>
-                </div>
-            </div>
-        </div>
+        <h1>Brandt Newton</h1>
+        <ul class="list-inline">
+            <li>Software Engineer</li>
+            <li>Entrepreneur</li>
+            <li>Athelete</li>
+        </ul>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <div class="container">
+            <h2>About</h2>
+            <div class="section-subtitle">I enjoy exercise, motorcycles, problem solving, &amp; learning.</div>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2><hr>
-                    <h4 class="section-subheading ">I enjoy exercise, motorcycles, problem solving, &amp; learning.</h4>
+                <div class="col-md-6 col-sm-12 pull-right">
+                    <img id="profile-picture" src="img/about/brandt-newton-small.jpg" alt="Brandt Newton software developer">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <p>I am a senior at UVM and a Software Engineering intern at Mach7 Technologies. I am meticulous and passionate; I require a high level of quality for every piece of software that I touch. I started programming three years ago and I constantly work to develop my technical, design and communication skills. I program in my spare time and always have side projects to work on.</p>
                 </div>
             </div>
-            <div class="row text-center newspaper">
-                <img id="profile-picture" src="img/about/brandt-newton-small.jpg" alt="Brandt Newton software developer">
-                <h4 class="newspaper-headline">Career</h4>
-                <p>I am a senior at UVM and a Software Engineering intern at Mach7 Technologies. I am meticulous and passionate; I require a high level of quality for every piece of software that I touch. I started programming three years ago and I constantly work to develop my technical, design and communication skills. I program in my spare time and always have side projects to work on.</p>
-                <h4 class="newspaper-headline">Computer Science</h4>
-                <p>I was introduced to programming and Computer Science three years ago during an introductory MATLAB class that was part of the Mechanical Engineering curriculum. I enjoyed the class and that summer I taught myself Java. That fall I switched my major to Computer Science (BS). The Computer Science program at UVM focuses on theory and problem solving and less on development so I set aside several hours every day to learn about programming and design.</p>
-                <h4 class="newspaper-headline">Personal</h4>
-                <p>I developed personal discipline in high school when I began lifting weights, as well as the habit of self education as I learned about nutrition and training techniques. I also discovered that I enjoy teaching others and have coached several friends. I have a patient, enthusiastic and supportive demeanor that seems to work well.</p>
-                <p>I also enjoy summer motorcycle trips with my father and uncle, sailing, Thai food, Vermont beer and cross country skiing.</p>
-                <h4 class="newspaper-headline">Experiences</h4>
-                <p>I took a gap year before college and spent three months in rural west Kenya living with host families while rebuilding an elementary school house and teaching high school physics and algebra. I spent two months in the UK working on a small horse farm and two summers doing ground maintenance at a power plant where I learned the value of hard work.</p>
-            </div>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h4 class="newspaper-headline">Languages</h4>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h4>Computer Science</h4>
+                    <p>I was introduced to programming and Computer Science three years ago during an introductory MATLAB class that was part of the Mechanical Engineering curriculum. I enjoyed the class and that summer I taught myself Java. That fall I switched my major to Computer Science (BS). The Computer Science program at UVM focuses on theory and problem solving and less on development so I set aside several hours every day to learn about programming and design.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h4>Personal</h4>
+                    <p>I developed personal discipline in high school when I began lifting weights, as well as the habit of self education as I learned about nutrition and training techniques. I also discovered that I enjoy teaching others and have coached several friends. I have a patient, enthusiastic and supportive demeanor that seems to work well.</p>
+                    <p>I also enjoy summer motorcycle trips with my father and uncle, sailing, Thai food, Vermont beer and cross country skiing.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h4>Experiences</h4>
+                    <p>I took a gap year before college and spent three months in rural west Kenya living with host families while rebuilding an elementary school house and teaching high school physics and algebra. I spent two months in the UK working on a small horse farm and two summers doing ground maintenance at a power plant where I learned the value of hard work.</p>
                 </div>
             </div>
-            <div class="row text-center">
-                <p>I am confident with Java, C# and SQL. I also have experience with Python, PHP, CSS, JavaScript, and Git. I regularly use both Windows and Unix/Linux.</p>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>Languages</h4>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <h6>Proficient</h6>
+                    <ul class="list-inline list-chips">
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>HTML 5</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <h6>Experienced</h6>
+                    <ul class="list-inline list-chips">
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12">
+                    <h4>Technologies</h4>
+                </div>
+                <div class="col-xs-12">
+                    <ul class="list-inline list-chips">
+                        <li>Android</li>
+                        <li>Git</li>
+                        <li>TFS</li>
+                        <li>Visual Studio</li>
+                        <li>Google Admob</li>
+                        <li>Google Analytics</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Portfolio</h2><hr>
-                        <h4 class="section-subheading">Work &amp; noteworthy school projects.</h4>
+    <section id="portfolio">
+        <div id="portfolio-grid" class="container">
+            <div class="header-icon-pair">
+                <h2>Portfolio</h2>
+                <div class="dropdown pull-right">
+                    <div id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons clickable">sort</i>
                     </div>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li role="separator" class="divider-header">Filter By</li>
+                        <li role="separator" class="divider"></li>
+                        <li>Personal</li>
+                        <li>Work</li>
+                        <li>School</li>
+                        <li>Award Winning</li>
+                        <li>Open Source</li>
+                        <li role="separator" class="divider-header">Sort By</li>
+                        <li role="separator" class="divider"></li>
+                        <li>Significance</li>
+                        <li>Chronological</li>
+                    </ul>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#project-mach7" class="portfolio-link" data-toggle="modal">
-                        <img class="portfolio-logo img-responsive" src="img/portfolio/mach7.png" alt="mach7 technologies internship"></img>
+            <div class="section-subtitle">Work &amp; noteworthy school projects.</div>
+            <div class="container">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-mach7" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/mach7.png" alt="mach7 technologies internship"></img>
                         <div class="portfolio-caption">
-                            <h4>Mach7 Internship</h4>
+                            <h6>Mach7 Internship</h6>
                             <p class="">A Windows Service with Web App UI</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#project-builder" class="portfolio-link" data-toggle="modal">
-                        <img class="portfolio-logo img-responsive" src="img/portfolio/bldr_icon.png" alt="bldr logo"></img>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-builder" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/bldr_icon.png" alt="bldr logo"></img>
                         <div class="portfolio-caption">
-                            <h4>Builder</h4>
-                            <img class="trophy" src="img/trophy.png">
+                            <h6>Builder</h6>
                             <p class="">Compare your computer hardware</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#project-diet" class="portfolio-link" data-toggle="modal">
-                        <img class="portfolio-logo img-responsive" src="img/portfolio/wip_icon.png" alt="work in progress"></img>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-rational" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/wip_icon.png" alt="work in progress"></img>
                         <div class="portfolio-caption">
-                            <h4>Diet App</h4>
+                            <h6>Rational</h6>
                             <p class="">A specialized dietary Android app</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#project-calculator" class="portfolio-link" data-toggle="modal">
-                        <img class="portfolio-logo img-responsive" src="img/portfolio/c_sharp.png" alt="brandt newton code design"></img>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-calculator" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/c_sharp.png" alt="brandt newton code design"></img>
                         <div class="portfolio-caption">
-                            <h4>Code Design</h4>
+                            <h6>Code Design</h6>
                             <p class="">An example of code design</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#project-repcheck" class="portfolio-link" data-toggle="modal">
-                        <img class="portfolio-logo img-responsive" src="img/portfolio/repcheck_logo.png" alt="rep check android logo"></img>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-repcheck" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/repcheck_logo.png" alt="rep check android logo"></img>
                         <div class="portfolio-caption">
-                            <h4>Rep Check</h4>
+                            <h6>Rep Check</h6>
                             <p class="">One Rep Max Calculator</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#project-expulse" class="portfolio-link" data-toggle="modal">
-                        <img class="portfolio-logo img-responsive" src="img/portfolio/expulse_logo.png" alt="expulse logo"></img>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-expulse" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/expulse_logo.png" alt="expulse logo"></img>
                         <div class="portfolio-caption">
-                            <h4>expulse.org</h4>
+                            <h6>expulse.org</h6>
                             <p class="">A private &amp; secure support network</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#project-woodsmen" class="portfolio-link" data-toggle="modal">
-                        <img class="portfolio-logo img-responsive" src="img/portfolio/snowball_icon_alpha.png" alt="brandt newton project"></img>
-                        <div class="portfolio-caption">
-                            <h4>Woodsmen</h4>
-                            <img class="trophy" src="img/trophy.png">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-woodsmen" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/snowball_icon_alpha.png" alt="brandt newton project"></img>
+                        <div class="portfolio-caption clickable portfolio-link">
+                            <h6>Woodsmen</h6>
                             <p class="">2D Java Game</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#project-bfg" class="portfolio-link" data-toggle="modal">
-                        <img class="portfolio-logo img-responsive" src="img/portfolio/bfg_icon.png"></img>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-bfg" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/bfg_icon.png"></img>
                         <div class="portfolio-caption">
-                            <h4>Barre Forest Guide</h4>
+                            <h6>Barre Forest Guide</h6>
                             <p class="">An iOS town forest guide</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,13 +285,9 @@
     <!-- Education Section -->
     <section id="education">
         <div class="container">
+            <h2>Education</h2>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Education</h2><hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="school">
+                <div class="school card">
                     <img src="img/logos/uvm_logo.png"></img>
                     <div class="school-info">
                         <h4>University of Vermont</h4>
@@ -237,8 +299,7 @@
                         </ul>
                     </div>
                 </div>
-                <div style="clear:both;"></div>
-                <div class="school">
+                <div class="school card">
                     <img src="img/logos/stja_logo.png"></img>
                     <div class="school-info">
                         <h4>Saint Johnsbury Academy High School</h4>
@@ -253,18 +314,14 @@
     </section>
 
     <!-- Work Experience Section -->
-    <section id="work" class="bg-light-gray">
+    <section id="work">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Work Experience</h2><hr>
-                    <h4 class="section-subheading ">Technical &amp; other jobs.</h4>
-                </div>
-            </div>
+            <h2>Work Experience</h2>
+            <div class="section-subtitle ">Technical &amp; other jobs.</div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <ul class="large">
-                        <li class="job">
+                        <li class="job card">
                             <div class="job-header">
                                 <span class="job-left">Mach7 Technologies</span>
                                 <span class="job-right ">South Burlington, Vermont</span>
@@ -279,11 +336,11 @@
                                 <li>Redesigned a Windows Form app as a Windows Service</li>
                                 <li>Worked closesly with CTO, QA and other team members</li>
                                 <li>Presented product to multiple teams and at <a href="http://vtcodecamp.org/2015/sessions#windows-services">Code Camp</a>.</li>
-                                <a href="#project-mach7" data-toggle="modal">See Portfolio</a>
+                                <li><a href="#project-mach7" class="portfolio-link" data-toggle="modal">See Portfolio</a></li>
                             </ul>
                             <div style="clear:both;"></div>
                         </li>
-                        <li class="job">
+                        <li class="job card">
                             <div class="job-header">
                                 <span class="job-left">Expulse.org</span>
                                 <span class="job-right ">Saint Johnsbury, Vermont</span>
@@ -297,11 +354,11 @@
                             <ul class="job-duties">
                                 <li>Designed &amp; built a website for secure support networking.</li>
                                 <li>Independently learned MySQL, PHP, CSS, and web security.</li>
-                                <a href="#project-expulse" data-toggle="modal">See Portfolio</a>
+                                <li><a href="#project-expulse" class="portfolio-link" data-toggle="modal">See Portfolio</a></li>
                             </ul>
                             <div style="clear:both;"></div>
                         </li>
-                        <li class="job">
+                        <li class="job card">
                             <div class="job-header">
                                 <span class="job-left">UVM</span>
                                 <span class="job-right ">Burlington, Vermont</span>
@@ -320,7 +377,7 @@
                             </ul>
                             <div style="clear:both;"></div>
                         </li>
-                        <li class="job">
+                        <li class="job card">
                             <div class="job-header">
                                 <span class="job-left">Emwiru Secondary School</span>
                                 <span class="job-right ">Emwiru, Kenya</span>
@@ -336,7 +393,7 @@
                             </ul>
                             <div style="clear:both;"></div>
                         </li>
-                        <li class="job">                                           
+                        <li class="job card">                                           
                             <div class="job-header">
                                 <span class="job-left">Ryegate Power Station</span>
                                 <span class="job-right ">East Ryegate, Vermont</span>
@@ -353,7 +410,7 @@
                             </ul>
                             <div style="clear:both;"></div>
                         </li>
-                        <li class="job">
+                        <li class="job card">
                             <div class="job-header">
                                 <span class="job-left">WWOOF UK</span>
                                 <span class="job-right ">Devon, UK</span>
@@ -380,31 +437,31 @@
     <!-- Contact -->
     <section id="contact">
         <div class="container">
+            <h2>Contact</h2>        
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact</h2><hr>
                     <ul id="contact-list">
                         <li>brandt.software@gmail.com</li>
                         <li>Burlington, Vermont</li>
                     </ul>
                     <ul class="list-inline social-buttons">
                         <li>
-                            <a class="fab gold-bg" href="https://plus.google.com/111859190494333798830/about">
+                            <a class="fab secondary-bg" href="https://plus.google.com/111859190494333798830/about">
                                 <img class="gplus" src="img/logos/gplus.png" alt="brandt newton google + logo">
                             </a>
                         </li>
                         <li>
-                            <a class="fab gold-bg" href="https://instagram.com/sithlord_bniz/">
+                            <a class="fab secondary-bg" href="https://instagram.com/brandt_newton/">
                                 <img class="instagram" src="img/logos/instagram.gif" alt="brandt newton instagram logo"/>
                             </a>
                         </li>
                         <li>
-                            <a class="fab gold-bg" href="https://www.linkedin.com/pub/brandt-newton/91/270/649">
+                            <a class="fab secondary-bg" href="https://www.linkedin.com/pub/brandt-newton/91/270/649">
                                 <img class="linkedin" src="img/logos/linkedin.png" alt="brandt newton linked in logo"/>
                             </a>
                         </li>                        
                         <li>
-                            <a class="fab gold-bg" data-toggle="modal" data-target="#git-checkpoint">
+                            <a class="fab secondary-bg" data-toggle="modal" data-target="#git-checkpoint">
                                 <img class="github" src="img/logos/github.png" alt="brandt newton github logo">
                             </a>
                         </li>
@@ -414,13 +471,11 @@
         </div>
     </section>
 
-    <footer class="bg-light-gray">
+    <footer class="primary-bg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <span id="last-updated">Last Updated September, 2015</span> |
-                    <a href="http://ironsummitmedia.github.io/startbootstrap-agency/">Original Template</a> |
-                    <span class="fancy-text">Title Image by <a href="http://dobai.co">Viktor Dobai</a></span>
+                <div class="text-left">
+                    <span id="last-updated">Last Updated January, 2016</span>
                 </div>
             </div>
         </div>
@@ -430,19 +485,13 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Before proceeding...</h4>
               </div>
               <div class="modal-body">
-                    <p>Before proceeding to my GitHub page please note:
-                    <ol>
-                        <li>Most of my work is done in private repositories.</li>
-                        <li>I have a 34 day streak of substantial commits.</li>
-                    </ol>
-                    </p>
+                    <p>Before proceeding to my GitHub page please note that most of my work is done in private repositories. I have a 34 day streak of substantial commits.</p>
               </div>
                <form action="https://github.com/btnewton" class="clearfix">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-times"></i>Got it</button>
+                    <button type="submit" class="btn-flat pull-right">Got it</button>
                 </form>
             </div>
         </div>
@@ -454,12 +503,6 @@
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="project-expulse" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal close-modal-btn" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -484,7 +527,6 @@
                                 <li>Client: Paul Newton</li>
                                 <li>Category: Website Design</li>
                             </ul>
-                            <button type="button" class="btn btn-primary close-modal-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -495,12 +537,6 @@
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="project-builder" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal close-modal-btn" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -513,7 +549,6 @@
                             <p>HTML, PHP, MySQL, Apache, CSS, JavaScript, JQuery, Charts.js API &amp; <a href="https://github.com/btnewton/CS-148-Final-Project">GitHub</a></p>
                             <h4 class="item-section">Accomplishments</h4><hr>
                             <p>Won best in class: Intermediate Web Design at the 2014 <a href="http://www.uvm.edu/~csfair/2014/home.php">UVM CS Fair</a> Sponsored by Google</p>
-                            <button type="button" class="btn btn-primary close-modal-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -523,12 +558,6 @@
 
     <div class="portfolio-modal modal fade" id="project-woodsmen" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal close-modal-btn" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -543,7 +572,6 @@
                             <p>Java, <a href="https://github.com/btnewton/Lumberjack">Github</a>, FL Studio (SFX), and Paint.net (GFX)</p>
                             <h4 class="item-section">Accomplishments</h4><hr>
                             <p>Won best in class: Java Programming at the 2013 <a href="http://www.uvm.edu/~csfair/2013/home.php">UVM CS Fair</a> Sponsored by Google</p>
-                            <button type="button" class="btn btn-primary close-modal-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -553,12 +581,6 @@
 
     <div class="portfolio-modal modal fade" id="project-bfg" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal close-modal-btn" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -569,7 +591,7 @@
                             <img class="img-responsive img-centered portfolio-img" src="img/portfolio/bfg_screen.png"></img>
                             <p>This app was created in CS 275: Mobile Apps &amp; Embedded Devices for the Barre town forest. It was designed to assist forest users in navigating the various walking and biking trails, historic sites and Frisbee golf course. We chose to use Google Maps and SQLite so our app could be more easily ported to Android. This was completed in one semester.</p>
                             <p>I created the application's SQLite database, and a Python script to convert and insert the KML trail data into the database.</p>
-                            <p>I was unhappy with what I learned during this Fall semester project, so I spent that Christmas break learning Android. This is when I began developing my <a class="swap-modal" href="#project-diet" data-dismiss="modal">dieting</a> and <a class="swap-modal" href="#project-repcheck">weight-lifting</a> apps.</p>
+                            <p>I was unhappy with what I learned during this Fall semester project, so I spent that Christmas break learning Android. This is when I began developing my <a class="swap-modal" href="#project-rational" data-dismiss="modal">dieting</a> and <a class="swap-modal" href="#project-repcheck">weight-lifting</a> apps.</p>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
                             <p>Objective-C, SQLite, Python, and KML</p>
                             <h4 class="item-section">Role &amp; Responsibilities</h4><hr>
@@ -580,7 +602,6 @@
                             </ul>
                             <h4 class="item-section">Accomplishments</h4><hr>
                             <p>All expected goals were met by the end of the semester and the stakeholder plans to launch the app.</p>
-                            <button type="button" class="btn btn-primary close-modal-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -588,20 +609,14 @@
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="project-diet" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="project-rational" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal close-modal-btn" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Dietary Android App</h2>
+                            <h2>Rational</h2>
                             <h4 class="item-intro ">A specialized dietary Android app.</h4>
                             <img class="img-responsive img-centered portfolio-img" src="img/portfolio/diet_screen.png"></img>
                             <p>This work in progress was inspired by interest in nutrition, event driven programming and the Android operating system. I also wanted to learn more about mobile app development than was taught in class. I am also teaching myself JUnit testing.</p>
@@ -619,7 +634,6 @@
                             <p>Android OS, Java, SQLite, PHP, MySQL, Git, JUnit 3, &amp; USDA API</p>
                             <h4 class="item-section">Role &amp; Responsibilities</h4><hr>
                             <p>I am designing &amp; creating every aspect of this app in my free time.</p>
-                            <button type="button" class="btn btn-primary close-modal-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -629,12 +643,6 @@
 
     <div class="portfolio-modal modal fade" id="project-calculator" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal close-modal-btn" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -741,7 +749,6 @@ public void Execute()
 </pre>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
                             <p>.NET Framework, C# &amp; <a href="https://github.com/btnewton/Calculator">GitHub</a></p>
-                            <button type="button" class="btn btn-primary close-modal-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -751,12 +758,6 @@ public void Execute()
 
     <div class="portfolio-modal modal fade" id="project-mach7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal close-modal-btn" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -775,7 +776,6 @@ public void Execute()
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
                             <p>C#, SQL, Javascript, DICOM Library, Chart.js, jqGrid, Visual Studio &amp; TFS</p>
                             <p><a href="http://www.mach7t.com">Learn more about Mach7 Technologies</a></p>
-                            <button type="button" class="btn btn-primary close-modal-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -785,12 +785,6 @@ public void Execute()
 
     <div class="portfolio-modal modal fade" id="project-repcheck" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal close-modal-btn" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -818,29 +812,11 @@ public void Execute()
                             </ul>
                             <h4 class="item-section">Tools &amp; Technologies</h4><hr>
                             <p>Android OS, Java, SQLite, Google Analytics, Git, JUnit 3</p>
-                            <button type="button" class="btn btn-primary close-modal-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/easing.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
-    <script src="js/portfolio.js"></script>
 </body>
-
 </html>

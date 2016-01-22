@@ -1,22 +1,10 @@
-/**
- * cbpAnimatedHeader.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
-var cbpAnimatedHeader = (function() {
+$(document).ready(function() {
 
-	var docElem = document.documentElement,
-		header = document.querySelector( '.navbar-default' ), 
-		didScroll = false,
-		changeHeaderOn = 350;
-	var name_title = $('.navbar-header page-scroll');
-	var navbar_brand = $('.navbar-brand');
-	navbar_brand.hide();
+	var docElem = $(document); 
+	var didScroll = false;
+	var changeHeaderOn = $('header ul').position().top;
+	var navbar = $('.navbar');
+	var navbarBrand = $('.navbar-brand');
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -30,15 +18,12 @@ var cbpAnimatedHeader = (function() {
 	function scrollPage() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
-			classie.add( header, 'navbar-shrink' );
-			// navbar_brand.css("display", "inline");
-			navbar_brand.show();
-			name_title.fadeOut("slow");
+			navbarBrand.show();
+			navbar.addClass('toolbar-active');
 		}
 		else {
-			classie.remove( header, 'navbar-shrink' );
-			navbar_brand.hide();
-			name_title.fadeIn("slow");
+			navbarBrand.hide();
+			navbar.removeClass('toolbar-active');
 		}
 		didScroll = false;
 	}
@@ -48,5 +33,5 @@ var cbpAnimatedHeader = (function() {
 	}
 
 	init();
-
-})();
+	scrollPage();
+});

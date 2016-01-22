@@ -5,6 +5,8 @@
  */
 
 $(document).ready(function() {
+    var toast = document.querySelector('#toast');
+
     // Modal links
 	var url = window.location.href;
 	var target = url.substring(url.indexOf("#"));
@@ -17,7 +19,31 @@ $(document).ready(function() {
     $("a.portfolio-link").click(function(){
         window.location.hash = $(this).attr("href");
     });
+
+    var copyTextareaBtn = document.querySelector('#js-textareacopybtn');
+    copyTextareaBtn.addEventListener('click', function(event) {
+      var copyTextarea = document.querySelector('#js-copytextarea');
+      copyTextarea.select();
+
+      try {
+        var successful = document.execCommand('copy');
+        if (successful) {
+            showToast(toast, "Copied email to clipboard.")
+        } else {
+            showToast(toast, "Unable to copy email.");
+        }
+      } catch (err) {
+        console.log('Oops, unable to copy');
+      }
+    });
+
+
+
 });
+
+function showToast(toast, message) {
+    toast.html(message);
+}
 
 var $root = $('html, body');
 $('a.page-scroll').click(function() {
