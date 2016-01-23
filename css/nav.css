@@ -25,19 +25,6 @@
 .nav-drawer-list-title:not(:first-child) {
     margin-top: 20px;
 }
-#nav-drawer-list-wrapper {
-    overflow-y: scroll;
-}
-@media screen and (max-height: 400px) {
-    #nav-drawer-list-wrapper {
-        height: 50%;
-    }
-}
-@media screen and (min-height: 400px) {
-    #nav-drawer-list-wrapper {
-        height: 70%;
-    }
-}
 #nav-drawer ul {
 	padding: 0;
 	list-style: none;
@@ -75,12 +62,14 @@ ul#resources li:hover {
 #nav-drawer li#active a {
     cursor: default !important;
 }
-#nav-drawer li a, #nav-drawer li * {
+#nav-drawer li a {
 	padding: 10px 20px;
 	text-decoration: none;
-	color: #777;
 	display: block;
 	width: 100% !important;
+}
+#nav-drawer li * {
+	color: #777;
 }
 #nav-drawer li a:hover, #nav-drawer li a:active, #nav-drawer li#active a {
 	text-decoration: none;

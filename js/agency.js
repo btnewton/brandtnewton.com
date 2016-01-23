@@ -15,50 +15,16 @@ $(document).ready(function() {
 	} else {
         $('.modal').modal('hide');
     }
-
-    $("a.portfolio-link").click(function(){
-        window.location.hash = $(this).attr("href");
-    });
-
-    var copyTextareaBtn = document.querySelector('#js-textareacopybtn');
-    copyTextareaBtn.addEventListener('click', function(event) {
-      var copyTextarea = document.querySelector('#js-copytextarea');
-      copyTextarea.select();
-
-      try {
-        var successful = document.execCommand('copy');
-        if (successful) {
-            showToast(toast, "Copied email to clipboard.")
-        } else {
-            showToast(toast, "Unable to copy email.");
-        }
-      } catch (err) {
-        console.log('Oops, unable to copy');
-      }
-    });
-
-
-
 });
-
-function showToast(toast, message) {
-    toast.html(message);
-}
 
 var $root = $('html, body');
 $('a.page-scroll').click(function() {
     var href = $.attr(this, 'href');
     $root.animate({
         scrollTop: $(href).offset().top
-    }, 500, function () {
-        window.location.hash = href;
-    });
+    }, 500, function () {});
     return false;
 });
-
-function setHash(hashValue) {
-    window.location.hash = hashValue;
-}
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
