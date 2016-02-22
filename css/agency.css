@@ -134,6 +134,8 @@ li.job {
 
 .job-header h4 {
     margin: 2px auto;
+    font-weight: 500;
+    color: #777;
 }
 
 .job-left {
@@ -145,7 +147,7 @@ li.job {
     float: right;
 }
 
-ul.job-duties {
+.job ul {
     margin-top: 10px;
     padding-left: 0px;
     text-align: left;
@@ -153,8 +155,9 @@ ul.job-duties {
     text-transform: none;
     font-size: 10pt;
 }
-.job-duties li {
+.job ul li {
     margin: 5px;
+    color: #777;
 }
 
 .no-text-transform {
@@ -239,7 +242,11 @@ iframe {
 img.play-store-logo {
     height: 40px;
 }
-
+@media(min-width:690px) {
+    header h1 {
+        font-size: 96px !important;
+    }
+}
 header {
     padding-top: 20px;
     height: 345px;
@@ -254,10 +261,11 @@ header h1 {
     margin-top: 140px;
     z-index: 10;
     text-align: center;
-    font-size: 96px;
+    font-size: 50px;
     font-weight: 100;
     color: #ECEFF1;
 }
+
 header ul {
     text-align: center;
 }
@@ -323,10 +331,15 @@ section h2 {
     text-transform: none;
 }
 
+@media(min-width: 992px) {
+    #profile-picture {
+        float: right;
+    }
+}
 #profile-picture {
     display: block;
-    margin: 30px auto 30px auto;
-    width: 100px;
+    float: none;
+    margin: 0 auto 20px auto;
 }
 
 aside.clients img {

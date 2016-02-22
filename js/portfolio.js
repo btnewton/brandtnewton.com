@@ -30,8 +30,6 @@ function toggleActionButton() {
 	if (modalOpen) {
 		modalBtn.hide();
 		navBtn.show();
-		// Update window history
-		history.pushState('', document.title, window.location.pathname);
 		modalOpen = false;
 	} else {
 		navBtn.hide();
