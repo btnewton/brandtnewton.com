@@ -44,10 +44,10 @@
 }
 #nav-drawer li {
 	font-size: 20px;
-	color: #EB4747 !important;
+	color: #F44336 !important;
 	font-weight: 200;
 	width: 100%;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
     cursor: pointer;
 }
 
@@ -60,14 +60,10 @@ ul#resources li {
 	display: inline-block;
 	width: auto;
 	margin: 15px;
-	color: #EB4747;
+	color: #F44336;
 }
 ul#resources li:hover {
 	background-color: transparent !important;
-}
-
-#nav-drawer li:hover {
-	background-color: #EEE !important;
 }
 #nav-drawer li#active:hover {
     background-color: transparent !important;
@@ -76,7 +72,7 @@ ul#resources li:hover {
     cursor: default !important;
 }
 #nav-drawer li a, #nav-drawer li * {
-	padding: 10px 20px;
+	padding: 5px 20px;
 	text-decoration: none;
 	color: #777;
 	display: block;
@@ -84,7 +80,7 @@ ul#resources li:hover {
 }
 #nav-drawer li a:hover, #nav-drawer li a:active, #nav-drawer li#active a {
 	text-decoration: none;
-	color: #EB4747;
+	color: #F44336;
 }
 #nav-drawer-title {
 	line-height: 65px;
@@ -96,7 +92,7 @@ ul#resources li:hover {
 	font-size: 30px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	color: #EB4747 !important;
+	color: #F44336 !important;
 }
 #nav-drawer-title a:hover, #nav-drawer-title a:active {
 	text-decoration: none;
@@ -111,7 +107,7 @@ nav.navbar {
 	margin-bottom: 0;
 }
 .toolbar-active {
-    background-color: #EB4747;
+    background-color: #F44336;
     border: 1px solid #E93535;
 	box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 	-webkit-transition: background-color 0.2s;

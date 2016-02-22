@@ -242,19 +242,21 @@ img.play-store-logo {
 
 header {
     padding-top: 20px;
-    height: 245px;
-    background-color: #EB4747;
+    height: 345px;
+    background-color: #F44336;
+    /*background-color: #F44336;*/
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 }
 header h1 {
     display: block;
-    margin-top: 40px;
+    margin-top: 140px;
     z-index: 10;
     text-align: center;
     font-size: 96px;
     font-weight: 100;
-    color: #497983;
+    color: #ECEFF1;
 }
 header ul {
     text-align: center;
@@ -265,7 +267,7 @@ header ul li {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 16px;
-    color: #3B6168;
+    color: #ECEFF1;
 }
 
 section {
@@ -386,7 +388,7 @@ ul.social-buttons li a {
     background-color: #497983;
 }
 .primary-bg {
-    background-color: #EB4747;
+    background-color: #F44336;
 }
 
 ul.social-buttons li {
@@ -409,7 +411,7 @@ ul.social-buttons li {
 }
 
 ul.list-chips li {
-    background-color: #DDD;
+    background-color: #DDDDDD;
     min-width: 40px;
     padding: 4px 12px 4px 12px;
     border-radius: 22px;
@@ -418,6 +420,7 @@ ul.list-chips li {
     color: #777;
     font-weight: 500;
     margin: 4px;
+    border: 1px solid #CCC;
 }
 
 .card {
@@ -473,11 +476,11 @@ button.btn-flat {
 }
 
 button.btn-flat:hover {
-    color: #EB4747 !important;
+    color: #F44336 !important;
 }
 
 button.btn-raised {
-    background-color: #EB4747 !important;
+    background-color: #F44336 !important;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
     color: #FFF;
 }
@@ -489,11 +492,11 @@ button.btn-raised:hover {
 button.btn-raised-invert {
     background-color: #FFFFFF !important;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-    color: #EB4747;
+    color: #F44336;
 }
 
 button.btn-raised-invert:hover {
-    color: #EB4747 !important;
+    color: #F44336 !important;
 }
 .portfolio-modal {
     z-index: 1000 !important;
