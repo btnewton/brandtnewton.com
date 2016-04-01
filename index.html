@@ -18,7 +18,7 @@
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/portfolio.css" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,13 +26,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
-    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    //   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    //   ga('create', 'UA-52756625-2', 'auto');
-    //   ga('send', 'pageview');
+      ga('create', 'UA-52756625-2', 'auto');
+      ga('send', 'pageview');
     </script>
 
     <!-- Google Code Prettify -->
@@ -85,9 +85,7 @@
                 </ul>
                 <div class="nav-drawer-list-title">Resources</div>
                 <ul id="resources">
-                    <li><a href="/resume.pdf"><i class="material-icons">description</i></a></li>
-                    <span id="js-copytextarea" style="display:none">brandt.software@gmail.com</span>
-                    <li><i class="material-icons" id="js-textareacopybtn">email</i></li>
+                    <li><a href="/resume.pdf" title="Resume"><i class="material-icons">description</i></a></li>
                 </ul>
             </div>
         </div>
@@ -106,7 +104,8 @@
         <h1>Brandt Newton</h1>
         <ul class="list-inline">
             <li>Software Engineer</li>
-            <li>Entrepreneur</li>
+            <li>Designer</li>
+            <li>Entreprenerd</li>
         </ul>
     </header>
 
@@ -115,24 +114,22 @@
         <div class="container">
             <h2>About</h2>
             <div class="section-subtitle">I enjoy exercise, motorcycles, problem solving, &amp; learning.</div>
+            <img id="profile-picture" class="img-responsive pull-right" src="img/about/brandt-newton-small.jpg" alt="Brandt Newton software developer">
             <div class="row">
-                <div class="col-md-6 col-xs-12 pull-right">
-                    <img id="profile-picture" class="pull-right" src="img/about/brandt-newton-small.jpg" alt="Brandt Newton software developer">
-                </div>
                 <div class="col-md-6 col-xs-12">
-                    <p>I am a senior at UVM and a Software Engineering intern at Mach7 Technologies. I am meticulous and passionate; I require a high level of quality for every piece of software that I touch. I started programming three years ago and I constantly work to develop my technical, design and communication skills. I program in my spare time and always have side projects to work on.</p>
+                    <p>I started programming 3 years ago when I taught myself Java and object-oriented programming.  I like to share this fact, because it shows that I am a self starter, quick learner, entrepreneurial, and genuinely excited about developing software.  Outside of class, I create (and usually finish) side projects that are designed to further my understanding of technologies and good development practices.</p>
+      <!--               <p>I enjoy the process of creating products.  Taking an idea and working with it until it becomes somehting that people (myself included) would want to use. Writing code that is clean, efficient and bulletproof. Designing algorithms that is optimal for the use cases. Designing (and redesigning) a user interface that is minimal and attractive.</p> -->
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <h4>Development</h4>
-                    <p>I was introduced to programming and Computer Science three years ago during an introductory MATLAB class that was part of the Mechanical Engineering curriculum. I enjoyed the class and that summer I taught myself Java. That fall I switched my major to Computer Science (BS). The Computer Science program at UVM focuses on theory and problem solving and less on development so I set aside several hours every day to learn about programming and design.</p>
+                    <h4>My Plan</h4>
+                    <p>After graduating this May, with my BS in Computer Science from UVM, I plan to join a company where I can work on exciting projects and collaborate with passionate people.  While I have no preference in location or size of company, I require good development practices and some degree of autonomy.  I am interested in more than writing code; my long term plan, once I have more industry experience, is to found a tech start up.</p>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <h4>Career</h4>
-                    <p>I developed personal discipline in high school when I began lifting weights, as well as the habit of self education as I learned about nutrition and training techniques. I also discovered that I enjoy teaching others and have coached several friends. I have a patient, enthusiastic and supportive demeanor that seems to work well.</p>
-                    <p>I also enjoy summer motorcycle trips with my father and uncle, sailing, Thai food, Vermont beer and cross country skiing.</p>
-                </div>
+                <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h4>As a Developer</h4>
+                    <p></p>
+                </div> -->
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <h4>Experiences</h4>
                     <p>I took a gap year before college and spent three months in rural west Kenya living with host families while rebuilding an elementary school house and teaching high school physics and algebra. I spent two months in the UK working on a small horse farm and two summers doing ground maintenance at a power plant where I learned the value of hard work.</p>
@@ -149,6 +146,7 @@
                         <li>C#</li>
                         <li>SQL</li>
                         <li>HTML 5</li>
+                        <li>CSS</li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-xs-12">
@@ -156,9 +154,7 @@
                     <ul class="list-inline list-chips">
                         <li>Python</li>
                         <li>PHP</li>
-                        <li>CSS</li>
                         <li>JavaScript</li>
-                        <li>Git</li>
                     </ul>
                 </div>
                 <div class="col-xs-12">
@@ -167,11 +163,16 @@
                 <div class="col-xs-12">
                     <ul class="list-inline list-chips">
                         <li>Android</li>
+                        <li>SQL Server</li>
+                        <li>SQLite</li>
+                        <li>MySQL</li>
                         <li>Git</li>
-                        <li>TFS</li>
-                        <li>Visual Studio</li>
                         <li>Google Admob</li>
                         <li>Google Analytics</li>
+                        <li>TFS</li>
+                        <li>Windows</li>
+                        <li>Linux</li>
+                        <li>Mac</li>
                     </ul>
                 </div>
             </div>
@@ -189,7 +190,7 @@
                         <img class="img-responsive" src="img/portfolio/mach7.png" alt="mach7 technologies internship"></img>
                         <div class="portfolio-caption">
                             <h6>Mach7 Internship</h6>
-                            <p class="">A Windows Service with Web App UI</p>
+                            <p>A Windows Service with Web App UI</p>
                         </div>
                     </div>
                 </div>
@@ -198,7 +199,7 @@
                         <img class="img-responsive" src="img/portfolio/bldr_icon.png" alt="bldr logo"></img>
                         <div class="portfolio-caption">
                             <h6>Builder</h6>
-                            <p class="">Compare your computer hardware</p>
+                            <p>Compare your computer hardware</p>
                         </div>
                     </div>
                 </div>
@@ -207,7 +208,16 @@
                         <img class="img-responsive" src="img/portfolio/wip_icon.png" alt="work in progress"></img>
                         <div class="portfolio-caption">
                             <h6>Rational</h6>
-                            <p class="">A specialized dietary Android app</p>
+                            <p>A specialized dietary Android app</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card clickable portfolio-link" href="#project-minesweeper" data-toggle="modal">
+                        <img class="img-responsive" src="img/portfolio/minesweeper_logo.png" alt="minesweeper android logo"></img>
+                        <div class="portfolio-caption">
+                            <h6>Material Minesweeper</h6>
+                            <p>Material Minesweeper</p>
                         </div>
                     </div>
                 </div>
@@ -216,7 +226,7 @@
                         <img class="img-responsive" src="img/portfolio/c_sharp.png" alt="brandt newton code design"></img>
                         <div class="portfolio-caption">
                             <h6>Code Design</h6>
-                            <p class="">An example of code design</p>
+                            <p>An example of code design</p>
                         </div>
                     </div>
                 </div>
@@ -225,7 +235,7 @@
                         <img class="img-responsive" src="img/portfolio/repcheck_logo.png" alt="rep check android logo"></img>
                         <div class="portfolio-caption">
                             <h6>Rep Check</h6>
-                            <p class="">One Rep Max Calculator</p>
+                            <p>One Rep Max Calculator</p>
                         </div>
                     </div>
                 </div>
@@ -234,7 +244,7 @@
                         <img class="img-responsive" src="img/portfolio/expulse_logo.png" alt="expulse logo"></img>
                         <div class="portfolio-caption">
                             <h6>expulse.org</h6>
-                            <p class="">A private &amp; secure support network</p>
+                            <p>Private &amp; secure support</p>
                         </div>
                     </div>
                 </div>
@@ -243,7 +253,7 @@
                         <img class="img-responsive" src="img/portfolio/snowball_icon_alpha.png" alt="brandt newton project"></img>
                         <div class="portfolio-caption clickable portfolio-link">
                             <h6>Woodsmen</h6>
-                            <p class="">2D Java Game</p>
+                            <p>2D Java Game</p>
                         </div>
                     </div>
                 </div>
@@ -252,7 +262,7 @@
                         <img class="img-responsive" src="img/portfolio/bfg_icon.png"></img>
                         <div class="portfolio-caption">
                             <h6>Barre Forest Guide</h6>
-                            <p class="">An iOS town forest guide</p>
+                            <p>An iOS town forest guide</p>
                         </div>
                     </div>
                 </div>
@@ -265,9 +275,8 @@
         <div class="container">
             <h2>Education</h2>
             <div class="row">
-                <div class="school card">
-                        <div style="clear:both;"></div>
-                
+                <div class="school">
+                    <!-- <div style="clear:both;"></div> -->                
                     <img src="img/logos/uvm_logo.png"></img>
                     <div class="school-info">
                         <h4>University of Vermont</h4>
@@ -278,7 +287,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="school card">
+                <div class="school">
                     <img src="img/logos/stja_logo.png"></img>
                     <div class="school-info">
                         <h4>Saint Johnsbury Academy High School</h4>
@@ -454,7 +463,7 @@
         <div class="container">
             <div class="row">
                 <div class="text-left">
-                    <span id="last-updated">Last Updated January, 2016</span>
+                    <span id="last-updated">Last Updated March, 2016</span>
                 </div>
             </div>
         </div>
@@ -846,6 +855,45 @@ public void Execute()
                                 <li>Google Analytics</li>
                                 <li>Git</li>
                                 <li>JUnit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="project-minesweeper" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Minesweeper</h2>
+                            <h4 class="item-intro ">The ultimate material Minesweeper game!</h4>
+                            <img class="img-responsive img-centered portfolio-img" src="img/portfolio/minesweeper_screen.png" alt="minesweeper android"></img>
+                            <div class="clearfix">
+                                <div class="col-sm-offset-4 col-sm-4">
+                                    <a href="https://play.google.com/store/apps/details?id=com.brandtnewtonsoftware.minesweeper"><img class="float-right play-store-logo" style="margin-bottom: 30px;" src="img/logos/gplay.png" alt="minesweeper play"></img></a>
+                                </div>
+                            </div>
+                            <p>I tried a number of minesweeper apps but didn't like them so I made my own. The board is rendered by custom view (BoardView) that draws on the canvas.  The BoardView onDraw method was optimized so only visible squares are rendered which allows a 1,000,000 square game to runs just as smoothly as a 81 square game.</p>
+                            
+                            <p>User's will never detonate a mine on their first move because the actual board is generated after they select a square.  To generate the board, mines are randomly placed in null squares (the user's selected square, as well as its neighbors, will not recieve mines because they are set to non-null values).  If a randomly selected square already has a mine in it, the algorithm will incrementally traverse the board which increases efficiency in mine-dense games, and means that mines will (slightly) tend to group.  When all mines have been placed, a linked list of all mine locations is traversed for efficient marking of non-mine squares.</p>
+                            
+                            <p>To uncover entire empty sections at once an <b>iterative breadth-first-search</b> is used.  A solid suite of JUnit 4 tests was essential in testing new algorithms and optimizations.</p>
+
+                            <p>Whenever the game activity is stopped, the game is efficiently serialized into JSON and saved to the database (or just a bundle if the device is rotating).  Squares are serialized into integer values that represent the OR of short <i>type</i> (shifted left 16 bits) and short <i>state</i>.  Although JSON is not the most efficient format, it is obviously human readable, so I was able to create non-random boards for testing and the tutorial from JSON files stored in the assets folders.</p>
+                            
+                            <p>I also made my own animated PieChart view for displaying game stats and a "SimpleList" view which is basically a simpler, but more efficient and nestable List/RecyclerView.</p>
+                            <h4 class="item-section">Tools &amp; Technologies</h4><hr>
+                            <ul class="list-inline list-chips">
+                                <li>Android</li>
+                                <li>Java</li>
+                                <li>SQLite</li>
+                                <li>Google Play Services</li>
+                                <li>Git</li>
+                                <li>JUnit 4</li>
                             </ul>
                         </div>
                     </div>

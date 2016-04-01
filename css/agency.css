@@ -149,7 +149,8 @@ li.job {
 
 .job ul {
     margin-top: 10px;
-    padding-left: 0px;
+    padding-left: 0px !important;
+    -webkit-padding-start: 0px !important;
     text-align: left;
     float: left;
     text-transform: none;
@@ -259,7 +260,7 @@ header {
 header h1 {
     display: block;
     margin-top: 140px;
-    z-index: 10;
+    /*font-family: 'Source Sans Pro', sans-serif !important;*/
     text-align: center;
     font-size: 50px;
     font-weight: 100;
@@ -355,7 +356,7 @@ footer {
 
 footer span#last-updated {
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin: 10px;
     padding-bottom: 0;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
