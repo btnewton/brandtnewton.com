@@ -5,33 +5,42 @@
  */
 
 $(document).ready(function() {
-    var toast = document.querySelector('#toast');
+    var $root = $('html, body');
+    $('a.page-scroll').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500);
+        return false;
+    });
 
-    // Modal links
-	var url = window.location.href;
-	var target = url.substring(url.indexOf("#"));
-	if (target.substring(1, 8) === "project"){
-		$(target).modal('show');
-	} else {
-        $('.modal').modal('hide');
-    }
+    var sectionHeaders = [$('#about'), $('#portfolio'), $('#education'), $('#work'), $('#contact')];
+    var sectionLinks = $('ul#sidebar-nav a').toArray();
+    var activeIndex = -1;
+
+
+    $(document).scroll(function() {
+        for (var i = 0; i < sectionHeaders.length; i++) {
+            var sectionHeader = sectionHeaders[i];
+
+            if (sectionHeader.offset().top - 5 >= $(document).scrollTop()) {
+                var newActiveIndex = i - 1;
+                if (activeIndex != newActiveIndex) {
+
+                    $('ul#sidebar-nav a').each( function( index, element ){
+                        if (index == newActiveIndex) {
+                            $(this).addClass('active');
+                        } else {
+                            $(this).removeClass('active');
+                        }
+
+                    });
+                }
+                return;
+            }
+        }
+
+
+    });
 });
 
-var $root = $('html, body');
-$('a.page-scroll').click(function() {
-    var href = $.attr(this, 'href');
-    $root.animate({
-        scrollTop: $(href).offset().top
-    }, 500, function () {});
-    return false;
-});
-
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});

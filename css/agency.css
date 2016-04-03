@@ -91,6 +91,27 @@ body {
     padding: 10px;
 }
 
+#sidebar-nav {
+     position: fixed;
+     margin-top: 65px;
+     width: 72px;
+     height: 100%;
+     padding: 0;
+     background-color: #EDEDFF;
+     border-right: 1px solid #AAA;
+}
+#sidebar-nav li {
+    margin: 24px auto 24px auto;
+}
+#sidebar-nav a.active i, #sidebar-nav a:hover i {
+    color: #F44336;
+}
+#sidebar-nav li i {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 ul#contact-list{
     list-style: none;
     margin: 40px 0 40px -45px;
@@ -280,8 +301,8 @@ header ul li {
 }
 
 section {
-    padding: 65px 0 20px 0;
-    background-color: #EDEDFF;
+    padding: 65px 0 20px 72px;
+    background-color: #FFFFFF;
 }
 
 section h2 {
