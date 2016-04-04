@@ -24,7 +24,6 @@ body {
   display: inline;
   width: 60%;
 }
-
 .school {
     margin: 10px auto 10px auto;
     padding: 0;
@@ -32,13 +31,13 @@ body {
     height: 100px;
     text-align: left;
 }
-
 .school img {
     float: left;
     display: inline;
     height: 90%;
     padding: 10px;
 }
+
 
 #sidebar-nav {
      position: fixed;
@@ -50,15 +49,12 @@ body {
      border-right: 1px solid #AAA;
 }
 #sidebar-nav li {
-    margin: 24px auto 24px auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align:center;
 }
 #sidebar-nav a.active i, #sidebar-nav a:hover i {
     color: #F44336;
-}
-#sidebar-nav li i {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 ul#contact-list{
