@@ -13,6 +13,7 @@ var navbar;
 $(document).ready(function() {
     sectionHeaders = [$('#about'), $('#portfolio'), $('#education'), $('#work'), $('#contact')];
     changeHeaderOn = $('header ul').position().top;
+    navbar = $('.navbar');
 
     // Smooth scroll
     $('a.page-scroll').click(function() {
@@ -23,74 +24,82 @@ $(document).ready(function() {
         return false;
     });
 
-    navbar = $('.navbar');
+
+    $(window).resize(function() {
+        updateNavType();
+    });
 
     $(document).scroll(function() {
-        var sy = scrollY();
-        var navbarBrand = $('.navbar-brand');
-        if ( sy >= changeHeaderOn ) {
-            navbarBrand.show();
-            navbar.addClass('toolbar-active');
-
-            if (useBottomNav()) {
-  
-            } else {
-                var sidebar = $('#sidebar-nav');
-                sidebar.show();
-                sidebar.animate({
-                    left: "0"
-                }, "fast");
-                updateSideNavMethod();
-            }
-        }
-        else {
-            navbarBrand.hide();
-            navbar.removeClass('toolbar-active');
-
-            if (useBottomNav()) {
-
-            } else {
-                var sidebar = $('#sidebar-nav');
-                sidebar.hide();
-                sidebar.css("left", "-100px");
-            }
-        }
+        updateNavType();
     });
+
+    updateNavType();
 });
 
-function scrollY() {
-    return window.pageYOffset || $(document).scrollTop;
-}
+function updateNavType() {
+    var sy = window.pageYOffset || $(document).scrollTop;
+    var navbarBrand = $('.navbar-brand');
+    if (sy >= changeHeaderOn) {
+        navbarBrand.show();
+        navbar.addClass('toolbar-active');
 
-function useBottomNav() {
-    return screen.width < 768;
-}
+        if (screen.width < 768) {
+            hideSideNav();
 
-function setNavMethod() {
+            var bottomNav = getBottomNav();
+            bottomNav.show();
+            bottomNav.animate({
+                bottom: "0"
+            }, "fast");
 
-    if (useBottomNav()) {
-        // hide side nav & show bottom nav
-        $('#sidebar-nav').hide();
+            updateNav('#bottom-nav ul a');
+        } else {
+            hideBottomNav();
+
+            var sidebar = getSideBarNav();
+            sidebar.show();
+            sidebar.animate({
+                left: "0"
+            }, "fast");
+
+            updateNav('ul#sidebar-nav a');
+        }
     } else {
-        // hide bottom nav & show side nav
-        $('#sidebar-nav').show();
+        navbarBrand.hide();
+        navbar.removeClass('toolbar-active');
+
+        hideBottomNav();
+        hideSideNav();
     }
-
-    
 }
 
-function updateBottomNavMethod() {
-
+function hideBottomNav() {
+    var bottomNav = getBottomNav();
+    bottomNav.hide();
+    bottomNav.css("bottom", "-100px");
 }
 
-function updateSideNavMethod() {
+function hideSideNav() {
+    var sidebar = getSideBarNav();
+    sidebar.hide();
+    sidebar.css("left", "-100px");
+}
+
+function getSideBarNav() {
+    return $('#sidebar-nav');
+}
+function getBottomNav() {
+    return $('#bottom-nav');
+}
+
+function updateNav(navIdentifier) {
     for (var i = 0; i < sectionHeaders.length; i++) {
         var sectionHeader = sectionHeaders[i];
 
-        if (sectionHeader.offset().top - 5 >= $(document).scrollTop()) {
+        if (sectionHeader.offset().top - 10 >= $(document).scrollTop()) {
             var newActiveIndex = i - 1;
             if (activeIndex != newActiveIndex) {
-                $('ul#sidebar-nav a').each( function( index, element ){
+                $(navIdentifier).each( function( index, element ){
                     if (index == newActiveIndex) {
                         $(this).addClass('active');
                     } else {

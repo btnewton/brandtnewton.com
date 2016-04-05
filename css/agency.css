@@ -40,6 +40,7 @@ body {
 
 
 #sidebar-nav {
+    z-index: 1999;
      position: fixed;
      margin-top: 65px;
      width: 72px;
@@ -55,6 +56,46 @@ body {
 }
 #sidebar-nav a.active i, #sidebar-nav a:hover i {
     color: #F44336;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding-left: 72px !important;
+    }
+}
+
+#bottom-nav {
+    z-index: 1999;
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    background-color: #F44336;
+    border-top: 1px solid #AAA;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    text-align: center;
+
+}
+#bottom-nav ul {
+    display: block;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    list-style: none;
+}
+#bottom-nav ul li {
+    display: inline-block;
+    margin: 12px;
+}
+#bottom-nav i {
+    transition: font 0.3s ease;
+    color: #DDD;
+}
+#bottom-nav a.active i, #bottom-nav a:hover i {
+    color: #FFF;
+}
+#bottom-nav a.active i {
+    font-size: 24pt;
 }
 
 ul#contact-list{
