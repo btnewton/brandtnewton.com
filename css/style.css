@@ -8,17 +8,11 @@ html, body {
 		height: 114px;
 	}
 }
-nav, .navbar-fixed {
-	background-color: #FF4E50;
-}
-nav .tabs {
-	background-color: #FF4E50;
-}
 nav .tabs .tab a.active {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 nav .tabs .tab a {
-	color: #FFC2C3;
+	color: #fafafa;
 }
 #brand {
 	cursor: pointer;
@@ -34,9 +28,8 @@ nav .tabs .tab a {
 	min-height: 100%;
 }
 footer {
-	background-color: #FF4E50;
 	padding: 16px;
-	color: #FFD6D7;
+	color: #fafafa;
 }
 footer ul.list-inline {
 	margin: 0;
@@ -50,11 +43,28 @@ footer ul li img:hover, footer ul li img:active {
 	opacity: .8;
 }
 footer a {
-	color: #ffffff;
+	color: #ff8a80;
 }
 
 
 /* GENERAL STYLE */
 ul.list-inline li, ol.list-inline li {
 	display: inline-block;
+}
+.card-title {
+	display: block;
+	width: 100%;
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+	background-image: -webkit-gradient(
+	  linear, left bottom, left top, from(rgba(50,50,50,0.3)),
+	  to(rgba(0,0,0,0))
+	);
+}
+.card-content p {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.clickable {
+	cursor: pointer;
 }
