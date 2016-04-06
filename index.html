@@ -60,7 +60,7 @@
 
     <footer class="teal darken-2">
         <div class="row">
-            <ul class="list-inline col s12 m6 valign">
+            <ul class="list-inline col s12 m4 valign">
                 <li>
                     <a class="fab secondary-bg" href="https://plus.google.com/111859190494333798830/about">
                         <img class="gplus" src="img/logos/gplus.png" width="25px" alt="brandt newton google + logo">
@@ -82,7 +82,11 @@
                     </a>
                 </li>
             </ul>
-            <div class="col s12 m6 right-align">
+            <div class="col s12 m4">
+                <a class="waves-effect waves-light btn modal-trigger" data-target="contact-modal">Contact</a>
+                <a class="waves-effect waves-light btn red" href="resume.pdf" target="_blank">Resume</a>
+            </div>
+            <div class="col s12 m4 right-align">
                 <a href="http://materializecss.com/" target="_blank">Materialize Framework</a>
             </div>
         </div>
@@ -92,23 +96,27 @@
     <div id="contact-modal" class="modal">
         <div class="modal-content">
             <h4>Contact</h4>
-            <div class="col m6 s12 left-align">
-                <ul class="icon-list">
-                    <li><i class="tiny material-icons">mail</i>brandt.software@gmail.com</li>
-                    <li><i class="tiny material-icons">description</i><a href="resume.pdf" target="_blank">Resume</a></li>
-                </ul>
+            <div class="row">
+                <div class="col offset-s3 s6 m2 center-align">
+                    <img src="img/brandt_newton_profile.jpg" class="circle responsive-img">
+                </div>
+                <div class="col s12 m8">
+                    <ul class="icon-list">
+                        <li><i class="tiny material-icons">mail</i>brandt.software@gmail.com</li>
+                        <li><i class="tiny material-icons">description</i><a href="resume.pdf" target="_blank">resume</a></li>
+                    </ul>
+                </div>
             </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Done</a>
         </div>
     </div>
 
-    <div id="dynamic-modal" class="modal">
-        <div class="modal-content">
-            <div id="dynamic-modal-waiting" class="center-align">
-
-            </div>
-            <div id="dynamic-modal-failed" class="center-align">
-                Could not load content.
-            </div>
+    <div id="dynamic-modal" class="modal modal-fixed-footer">
+        <div class="modal-content"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Done</a>
         </div>
     </div>
 </body>

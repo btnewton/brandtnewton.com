@@ -8,6 +8,9 @@ html, body {
 		height: 114px;
 	}
 }
+nav {
+	height: 108px;
+}
 nav .tabs .tab a.active {
 	color: #ffffff;
 }
@@ -42,20 +45,24 @@ footer ul li img {
 footer ul li img:hover, footer ul li img:active {
 	opacity: .5;
 }
-footer a {
+footer ul a {
 	color: rgba(0, 0, 0, 0.3);
+}
+footer .btn {
+	margin: 4px;
 }
 
 
 /* GENERAL STYLE */
 h2 {
-	color: #4db6ac;
+	/*color: #4db6ac;*/
+	color: #00796b;
 }
 ul.list-inline li, ol.list-inline li {
 	display: inline-block;
 }
 ul.icon-list li i {
-	margin: 8px;
+	margin: 12px;
 }
 li.chip {
 	margin: 4px;
@@ -79,4 +86,11 @@ li.chip {
 }
 .play-store-logo {
 	height: 32px;
+}
+
+#dynamic-modal h5 {
+	margin-bottom: 24px;
+}
+#dynamic-modal h4 {
+	margin-top: 32px;
 }
