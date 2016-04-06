@@ -45,11 +45,11 @@
 
 <body id="page-top" class="index">
     <div class="navbar-fixed">
-        <nav class="blue-grey">
+        <nav class="teal">
             <a id="brand">Brandt Newton</a>
-            <ul class="tabs blue-grey">
-              <li class="tab waves-effect"><a class="active" data-target="about">About</a></li>
-              <li class="tab waves-effect"><a data-target="projects">Projects</a></li>
+            <ul class="tabs teal">
+              <li class="tab waves-effect"><a data-target="about">About</a></li>
+              <li class="tab waves-effect"><a class="active" data-target="projects">Projects</a></li>
               <li class="tab waves-effect"><a data-target="experience">Experience</a></li>
             </ul>
         </nav>
@@ -58,16 +58,9 @@
     <!-- Used for setting content -->
     <div id="content-holder"></div>
 
-    <footer class="blue-grey darken-1">
-        <h6>Contact</h6>
+    <footer class="teal darken-2">
         <div class="row">
-            <div class="col m6 s12 left-align">
-                <ul>
-                    <li><i class="tiny material-icons">mail</i>brandt.software@gmail.com</li>
-                    <li><i class="tiny material-icons">description</i><a href="resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </div>
-            <ul class="list-inline col m6 s12 right-align">
+            <ul class="list-inline col s12 m6 valign">
                 <li>
                     <a class="fab secondary-bg" href="https://plus.google.com/111859190494333798830/about">
                         <img class="gplus" src="img/logos/gplus.png" width="25px" alt="brandt newton google + logo">
@@ -84,15 +77,39 @@
                     </a>
                 </li>                        
                 <li>
-                    <a class="fab secondary-bg" data-toggle="modal" data-target="#git-checkpoint">
+                    <a class="fab secondary-bg" href="https://github.com/btnewton">
                         <img class="github" src="img/logos/github.png" width="25px" alt="brandt newton github logo">
                     </a>
                 </li>
             </ul>
+            <div class="col s12 m6 right-align">
+                <a href="http://materializecss.com/" target="_blank">Materialize Framework</a>
+            </div>
         </div>
-        <div class="right-align">
-            <a href="http://materializecss.com/" target="_blank">Materialize Framework</a>
-        </div>
+
     </footer>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <h4>Contact</h4>
+            <div class="col m6 s12 left-align">
+                <ul class="icon-list">
+                    <li><i class="tiny material-icons">mail</i>brandt.software@gmail.com</li>
+                    <li><i class="tiny material-icons">description</i><a href="resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dynamic-modal" class="modal">
+        <div class="modal-content">
+            <div id="dynamic-modal-waiting" class="center-align">
+
+            </div>
+            <div id="dynamic-modal-failed" class="center-align">
+                Could not load content.
+            </div>
+        </div>
+    </div>
 </body>
 </html>

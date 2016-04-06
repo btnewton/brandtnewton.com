@@ -1,0 +1,109 @@
+<h4>Code Design</h3>
+<h4>An example of code design</h4>
+
+<div class="center-align">
+    <img class="responsive-img" src="img/portfolio/calc_screen.png" alt="brandt newton code design"/>
+</div>
+
+<p>In about 10 hours I began to learn the .NET Framework and produced a Windows Form calculator app. <br>Check out the code <a href="https://github.com/btnewton/Calculator">here</a>.</p></p>
+
+<h4>MVC(ish)</h4>
+<p>I always design software with evolution in mind: one of my goals was to make adding new calculator types and functionality easy. I adapted the MVC design pattern to separate the code that all calculators share from the code that varies. Different calculator forms (view-controllers), such as standard or scientific, can be swapped out while the model remains the same.</p>
+
+<h4>Observer Pattern</h4>
+<p>The form implements 3 observer interfaces and registers itself with the calculator instance. The form observers state changes in the calculators answer, operation history and operand fields. I chose this configuration of observers to accommodate different form displays. This version has only 2 fields that display information so answers will temporarily replace the operand when updated.</p>
+
+<pre class="prettyprint" style="max-height:400px">
+partial class CalculatorForm : Form, AnswerObserver, HistoryObserver, OperandObserver
+{
+    CalculatorInterface model;
+    
+    public CalculatorForm(CalculatorInterface model)
+    {
+        ...
+
+        // Register form with model
+        model.AnswerObserver = (AnswerObserver) this;
+        model.HistoryObserver = (HistoryObserver) this;
+        model.OperandObserver = (OperandObserver) this;          
+    }
+
+    public void UpdateOperand()
+    {
+        // Update operand display
+        operandTextBox.Text = model.Operand;
+    }
+
+    public void UpdateHistory()
+    {
+        string history = model.History;
+        
+        if (history.Length > 34)
+        {
+            history = "..." + history.Substring(history.Length - 28);
+        }
+
+        historyTextBox.Text = history;
+    }
+
+    public void UpdateAnswer()
+    {
+        // Overwrite operand display
+        operandTextBox.Text = model.CurrentValue;
+    }
+
+    ...
+}
+</pre>
+                            <p>The controller manipulates the model by changing the value of the operand with the PutDigit and ApplyTransformation methods. ApplyTransformation accepts objects that implements the Transformation interface. Transformations include delete, clear, and put decimal functions. New transformations can be easily created by implementing the Transformation interface and without changing the model.</p>
+                            <h4 class="item-section">Strategy Pattern</h4><hr>
+                            <p>The Strategy Design pattern is used to define and change the action that the calculator will perform when the equals button is pressed. All operations implement the Operation interface and are used to perform operations between the current value and the operand fields. They are responsible for their own error handling as needed. 
+                            <?prettify?>
+                            <pre class="prettyprint">
+class AddOperation : Operation
+{
+    public double Calculate(double operand1, double operand2)
+    {
+        return operand1 + operand2;
+    }
+    public override string ToString()
+    {
+        return "+";
+    }
+}
+</pre>
+
+
+                            <p>The model will apply the current operation if the operand is not empty before setting the new operation and update the appropriate observers.</p>
+                            <?prettify?>
+                            <pre class="prettyprint">
+/* Applies the current operation and updates the calculation history.
+*
+* The operand is reset but only the history and answer observers are updated.
+*/
+public void Execute()
+{
+    double operandValue;
+    
+    bool operandConverted = double.TryParse(operand, NumberStyles.Float, CultureInfo.InvariantCulture, out operandValue);
+    
+    if (operandConverted)
+    {
+        currentValue = operation.Calculate(currentValue, double.Parse(operand));
+        history += operation.ToString() + " " + operand + " ";
+    }
+    else
+    {
+        Console.WriteLine("Unable to convert {0}", operand);
+    }
+    
+    InitializeOperand();
+    UpdateHistoryObserver();
+    UpdateAnswerObserver();
+}
+</pre>
+<h4>Tools &amp; Technologies</h4>
+<ul class="list-inline">
+    <li class="chip">C#</li>
+    <li class="chip">GitHub</li>
+</ul>

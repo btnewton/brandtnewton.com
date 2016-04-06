@@ -1,0 +1,30 @@
+<h3>Minesweeper</h3>
+<h5>The ultimate material Minesweeper game!</h5>
+<div class="center-align">
+    <img class="responsive-img" src="img/portfolio/minesweeper_screen.png" alt="minesweeper android"/>
+</div>
+
+<div class="row">
+    <div class="center-align">
+        <a href="https://play.google.com/store/apps/details?id=com.brandtnewtonsoftware.minesweeper"><img class="play-store-logo" src="img/logos/gplay.png" alt="minesweeper play"/></a>
+    </div>
+</div>
+
+<p>I tried a number of minesweeper apps but didn't like them so I made my own. The board is rendered by custom view (BoardView) that draws on the canvas.  The BoardView onDraw method was optimized so only visible squares are rendered which allows a 1,000,000 square game to runs just as smoothly as a 81 square game.</p>
+
+<p>User's will never detonate a mine on their first move because the actual board is generated after they select a square.  To generate the board, mines are randomly placed in null squares (the user's selected square, as well as its neighbors, will not recieve mines because they are set to non-null values).  If a randomly selected square already has a mine in it, the algorithm will incrementally traverse the board which increases efficiency in mine-dense games, and means that mines will (slightly) tend to group.  When all mines have been placed, a linked list of all mine locations is traversed for efficient marking of non-mine squares.</p>
+
+<p>To uncover entire empty sections at once an <b>iterative breadth-first-search</b> is used.  A solid suite of JUnit 4 tests was essential in testing new algorithms and optimizations.</p>
+
+<p>Whenever the game activity is stopped, the game is efficiently serialized into JSON and saved to the database (or just a bundle if the device is rotating).  Squares are serialized into integer values that represent the OR of short <i>type</i> (shifted left 16 bits) and short <i>state</i>.  Although JSON is not the most efficient format, it is obviously human readable, so I was able to create non-random boards for testing and the tutorial from JSON files stored in the assets folders.</p>
+
+<p>I also made my own animated PieChart view for displaying game stats and a "SimpleList" view which is basically a simpler, but more efficient and nestable List/RecyclerView.</p>
+<h4>Tools &amp; Technologies</h4>
+<ul class="list-inline">
+    <li class="chip">Android</li>
+    <li class="chip">Java</li>
+    <li class="chip">SQLite</li>
+    <li class="chip">Google Play Services</li>
+    <li class="chip">Git</li>
+    <li class="chip">JUnit 4</li>
+</ul>

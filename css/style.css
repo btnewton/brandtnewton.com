@@ -21,6 +21,10 @@ nav .tabs .tab a {
 	margin-left: 8px;
 }
 
+.subtitle {
+	margin-bottom: 32px;
+}
+
 #content-holder {
 	background-color: #fafafa;
 	margin-top: 48px;
@@ -40,16 +44,25 @@ footer ul li img {
 	margin: 4px;
 }
 footer ul li img:hover, footer ul li img:active {
-	opacity: .8;
+	opacity: .5;
 }
 footer a {
-	color: #ff8a80;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 
 /* GENERAL STYLE */
+h2 {
+	color: #4db6ac;
+}
 ul.list-inline li, ol.list-inline li {
 	display: inline-block;
+}
+ul.icon-list li i {
+	margin: 8px;
+}
+li.chip {
+	margin: 4px;
 }
 .card-title {
 	display: block;
@@ -67,4 +80,7 @@ ul.list-inline li, ol.list-inline li {
 }
 .clickable {
 	cursor: pointer;
+}
+.play-store-logo {
+	height: 32px;
 }

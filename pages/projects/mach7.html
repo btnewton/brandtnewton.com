@@ -1,0 +1,31 @@
+<h3>Mach7 Internship</h3>
+<h5 class="item-intro ">A Windows Service with Web App UI</h5>
+
+<div class="center-align">
+    <img class="responsive-img" src="img/portfolio/mach7_screen.png" alt="mach7 rapid migration screenshot"/>
+</div>
+
+<p>In the summer of 2015 I worked as a Software Development intern at Mach7 Technologies. My summer project was to completely redesign their <a href="http://www.mach7t.com/solutions/data/rapid-migration/">Rapid Migration Utility</a>. The initial goal was to simply translate the existing Visual Basic code to C#. However, during the first design meeting the requirements changed into a complete redesign of the existing product. The original tool was a Windows Form app but was mostly run in the background and required an engineer to be on site. I redesigned this enterprise product as a Windows Service with an MVC Web Application front end.</p>
+
+<h4>How It Works</h4>
+<p>Mach7 creates enterprise imaging platform software for hospitals. All medical images are wrapped in the DICOM format that defines viewing and handling protocols. A Migration consists of a 3 modular components. The Catalog component queries source systems for DICOM to move. The Delivery component moves DICOM objects from one system to another. The Verify component ensures that DICOM objects were correctly transfered, marking them to be resent when needed. The web app is used to create, configure, control and monitor all migrations. Migrations will run for about a year moving decades worth of data to new systems.</p>
+
+<h4>The Result</h4>
+<p>Working with the Mach7 team I created an automated solution that saves time and money because it is easy to extend, can run on a schedule, gracefully handles unexpected shutdowns, and has an alert system. The final product is also more scalable, gives more control to the administrator, and reports progress and performance in greater detail.</p>
+<p>The front end is clean and informative. The service runs on a flexible and powerful Migration framework that handles the workflow and manages alerts, monitoring and dynamic thread creation. I also designed the framework to simplify creating new component types. Migrations can be manually operated or scheduled independently.</p>
+
+<h4>What I Learned</h4>
+<p>This was the first time that I worked for a company to develop software. I enjoyed working closely with their CTO, Quality, Design, Sales and Management. Creating this enterprise grade product tested my skills as a developer and communicator, and I learned a lot. I am proud of the work I did and the value I added to the company.</p>
+
+<h4>Tools &amp; Technologies</h4>
+<ul class="list-inline">
+    <li class="chip">C#</li>
+    <li class="chip">SQL Server</li>
+    <li class="chip">JavaScript</li>
+    <li class="chip">DICOM Library</li>
+    <li class="chip">Chart.js</li>
+    <li class="chip">jqGrid</li>
+    <li class="chip">Visual Studio</li>
+    <li class="chip">TFS</li>
+</ul>
+<a href="http://www.mach7t.com">Learn more about Mach7 Technologies</a>
