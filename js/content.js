@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$('[data-target]').click(function() {
 		if (!$(this).hasClass('active')) {
 			var target = extractTarget($(this));
-			setContent(target);	
+			setContent(target);
 		} else {
 			scrollToTop();
 		}
@@ -21,6 +21,7 @@ $(document).ready(function() {
 
 function initMaterializeComponents() {
 	$('.modal-trigger').leanModal();
+	$('.materialboxed').materialbox();
 
 	$('[data-modal-content]').click(function() {
 		var target = "pages/projects/" + $(this).data('modal-content') + ".html";
@@ -30,10 +31,17 @@ function initMaterializeComponents() {
 	        url: target,
 	        success: function (result) {
 	            $("#dynamic-modal .modal-content").html(result);
+	            $("#dynamic-modal img").each(function() {
+	            	Materialize.fadeInImage($(this));
+	            });
 	        },
 	        cache: false
 	    });
 	});
+
+	$("img").each(function() {
+    	Materialize.fadeInImage($(this));
+    });
 }
 
 function extractTarget(htmlElement) {
